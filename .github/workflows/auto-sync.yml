@@ -1,0 +1,21 @@
+name: Sync Upstream
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 每天半夜自動同步上游最新 Code
+  workflow_dispatch: # 讓你可以在 Actions 頁面手動觸發
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target repo
+        uses: actions/checkout@v4
+
+      - name: Sync Upstream Executable
+        uses: a2ren/fork-sync-upstream-action@v1.0
+        with:
+          upstream_repo: 'ORIGINAL_OWNER/ORIGINAL_REPO'
+          upstream_branch: 'main'
+          target_branch: 'main'
+          git_token: ${{ secrets.GITHUB_TOKEN }}
