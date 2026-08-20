@@ -58,7 +58,7 @@ import com.puppycrawl.tools.checkstyle.internal.utils.XmlUtil;
  * Prerequisites for execution:
  * <ul>
  *   <li>{@code mvn clean compile}</li>
- *   <li>{@code mvn plexus-component-metadata:generate-metadata}
+ *   <li>{@code mvn process-classes}
  *       (for custom macro/parser discovery)</li>
  * </ul>
  */
@@ -417,7 +417,7 @@ public class XdocsCategoryIndexTest extends AbstractModuleTestSupport {
      * @param parent The parent DOM node.
      * @param tagName The tag name to filter child elements by.
      * @return An {@link Optional} with the first matching child element,
-     *         or empty {@link Optional} if none found or parent is null.
+     *         or empty {@code Optional} if none found or parent is null.
      */
     private static Optional<Element> getFirstChildElementByTagName(Node parent, String tagName) {
         Optional<Element> result = Optional.empty();

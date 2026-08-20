@@ -11,6 +11,10 @@
         <param name="modulePath"
                value="src/main/java/com/puppycrawl/tools/checkstyle/checks/indentation/IndentationCheck.java"/>
       </macro>
+      <macro name="sitetoc">
+        <param name="modulePath"
+               value="src/main/java/com/puppycrawl/tools/checkstyle/checks/indentation/IndentationCheck.java"/>
+      </macro>
       <subsection name="Description" id="Indentation_Description">
         <macro name="description">
             <param name="modulePath"
@@ -168,8 +172,16 @@
       </subsection>
 
       <subsection name="Use Cases" id="Indentation_Use_Cases">
-        <p id="UseCase1-code">
+        <p id="UseCase1-config">
           But if forceStrictCondition = false, this code is valid:
+        </p>
+        <macro name="example">
+          <param name="path"
+                 value="resources/com/puppycrawl/tools/checkstyle/checks/indentation/indentation/UseCase1.java"/>
+          <param name="type" value="config"/>
+        </macro>
+        <p id="UseCase1-code">
+          Example:
         </p>
         <macro name="example">
           <param name="path"

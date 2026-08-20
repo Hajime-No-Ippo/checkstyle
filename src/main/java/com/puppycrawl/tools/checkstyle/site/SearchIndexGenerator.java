@@ -268,8 +268,8 @@ public final class SearchIndexGenerator {
      *
      * <p>Example ids found in XDoc source:</p>
      * <ul>
-     *   <li>{@code id="Example1-config"} -&gt; label "Example1", type "config"</li>
-     *   <li>{@code id="Example1-code"}   -&gt; label "Example1", type "code"</li>
+     *   <li>{@code id="Example1-config"} -{@literal >} label "Example1", type "config"</li>
+     *   <li>{@code id="Example1-code"}   -{@literal >} label "Example1", type "code"</li>
      * </ul>
      */
     private static final Pattern EXAMPLE_PARAGRAPH_ID =
@@ -410,7 +410,7 @@ public final class SearchIndexGenerator {
      * @param xdocsDir  the xdocs root (used for URL building)
      * @throws IllegalStateException if {@code checksDir} cannot be listed, or
      *         if one of its subdirectories has no entry in
-     *         {@link #CHECKS_CATEGORY_DISPLAY_NAMES}
+     *         {@code #CHECKS_CATEGORY_DISPLAY_NAMES}
      */
     private void processChecksDirectory(File checksDir, File xdocsDir) {
         final File[] categoryDirs = checksDir.listFiles(File::isDirectory);
@@ -518,7 +518,8 @@ public final class SearchIndexGenerator {
         final File[] xmlFiles = xdocsDir.listFiles(file -> {
             final String name = file.getName();
             return file.isFile()
-                    && PLAIN_XML.matcher(name).find();
+                    && PLAIN_XML.matcher(name).find()
+                    && !name.startsWith("releasenotes");
         });
 
         if (xmlFiles != null) {

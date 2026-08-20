@@ -170,7 +170,7 @@ public class PackageObjectFactory implements ModuleFactory {
 
     /**
      * Creates a new instance of a class from a given name, or that name
-     * concatenated with &quot;Check&quot;. If the name is
+     * concatenated with {@code "Check"}. If the name is
      * a class name, creates an instance of the named class. Otherwise, creates
      * an instance of a class name obtained by concatenating the given name
      * to a package name from a given list of package names.
@@ -377,7 +377,7 @@ public class PackageObjectFactory implements ModuleFactory {
     }
 
     /**
-     * Searching to class with given name (or name concatenated with &quot;Check&quot;) in existing
+     * Searching to class with given name (or name concatenated with {@code "Check"}) in existing
      * packages. Returns instance if class found or, otherwise, null.
      *
      * @param name the name of a class.
@@ -700,6 +700,8 @@ public class PackageObjectFactory implements ModuleFactory {
     private static void fillChecksFromJavadocPackage() {
         NAME_TO_FULL_MODULE_NAME.put("AtclauseOrderCheck",
                 BASE_PACKAGE + ".checks.javadoc.AtclauseOrderCheck");
+        NAME_TO_FULL_MODULE_NAME.put("IllegalBlockTagCheck",
+                BASE_PACKAGE + ".checks.javadoc.IllegalBlockTagCheck");
         NAME_TO_FULL_MODULE_NAME.put("InvalidJavadocPositionCheck",
                 BASE_PACKAGE + ".checks.javadoc.InvalidJavadocPositionCheck");
         NAME_TO_FULL_MODULE_NAME.put("JavadocBlockTagLocationCheck",
@@ -718,6 +720,8 @@ public class PackageObjectFactory implements ModuleFactory {
                 BASE_PACKAGE + ".checks.javadoc.JavadocPackageCheck");
         NAME_TO_FULL_MODULE_NAME.put("JavadocParagraphCheck",
                 BASE_PACKAGE + ".checks.javadoc.JavadocParagraphCheck");
+        NAME_TO_FULL_MODULE_NAME.put("JavadocRegexpCheck",
+                BASE_PACKAGE + ".checks.javadoc.JavadocRegexpCheck");
         NAME_TO_FULL_MODULE_NAME.put("JavadocTagContinuationIndentationCheck",
                 BASE_PACKAGE + ".checks.javadoc.JavadocTagContinuationIndentationCheck");
         NAME_TO_FULL_MODULE_NAME.put("JavadocTypeCheck",
@@ -732,6 +736,8 @@ public class PackageObjectFactory implements ModuleFactory {
                 BASE_PACKAGE + ".checks.javadoc.MissingJavadocTypeCheck");
         NAME_TO_FULL_MODULE_NAME.put("NonEmptyAtclauseDescriptionCheck",
                 BASE_PACKAGE + ".checks.javadoc.NonEmptyAtclauseDescriptionCheck");
+        NAME_TO_FULL_MODULE_NAME.put("PreferLiteralJavadocInlineTagCheck",
+                BASE_PACKAGE + ".checks.javadoc.PreferLiteralJavadocInlineTagCheck");
         NAME_TO_FULL_MODULE_NAME.put("RequireEmptyLineBeforeBlockTagGroupCheck",
                 BASE_PACKAGE + ".checks.javadoc.RequireEmptyLineBeforeBlockTagGroupCheck");
         NAME_TO_FULL_MODULE_NAME.put("SingleLineJavadocCheck",
@@ -872,6 +878,8 @@ public class PackageObjectFactory implements ModuleFactory {
      * Fill short-to-full module names map with Checks from whitespace package.
      */
     private static void fillChecksFromWhitespacePackage() {
+        NAME_TO_FULL_MODULE_NAME.put("ArrayBracketNoWhitespaceCheck",
+                BASE_PACKAGE + ".checks.whitespace.ArrayBracketNoWhitespaceCheck");
         NAME_TO_FULL_MODULE_NAME.put("EmptyForInitializerPadCheck",
                 BASE_PACKAGE + ".checks.whitespace.EmptyForInitializerPadCheck");
         NAME_TO_FULL_MODULE_NAME.put("EmptyForIteratorPadCheck",

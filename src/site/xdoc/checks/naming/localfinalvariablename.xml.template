@@ -11,6 +11,10 @@
         <param name="modulePath"
                value="src/main/java/com/puppycrawl/tools/checkstyle/checks/naming/LocalFinalVariableNameCheck.java"/>
       </macro>
+      <macro name="sitetoc">
+        <param name="modulePath"
+               value="src/main/java/com/puppycrawl/tools/checkstyle/checks/naming/LocalFinalVariableNameCheck.java"/>
+      </macro>
       <subsection name="Description" id="LocalFinalVariableName_Description">
         <macro name="description">
             <param name="modulePath"
@@ -29,7 +33,7 @@
 
       <subsection name="Examples" id="LocalFinalVariableName_Examples">
         <p id="Example1-config">
-          To configure the check:
+          To configure the check with default properties:
         </p>
         <macro name="example">
           <param name="path"
@@ -43,7 +47,8 @@
           <param name="type" value="code"/>
         </macro><hr class="example-separator"/>
         <p id="Example2-config">
-          To configure the check with default properties:
+          An example of how to configure the check so that the length of the
+          name is not less than 4:
         </p>
         <macro name="example">
           <param name="path"

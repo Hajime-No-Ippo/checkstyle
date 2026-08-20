@@ -303,8 +303,6 @@ public final class InlineConfigParser {
      */
     private static final Set<String> SUPPRESSED_VALIDATE_MESSAGE_FILES = Set.of(
             "checks/coding/equalshashcode/Example1.java",
-            "checks/coding/illegaltype/InputIllegalTypeTestGenerics.java",
-            "checks/coding/illegaltype/InputIllegalTypeTestIgnoreMethodNames.java",
             "checks/coding/illegaltype/InputIllegalTypeTestEnhancedInstanceof.java",
             "checks/coding/illegaltype/InputIllegalTypeTestLegalAbstractClassNames.java",
             "checks/coding/illegaltype/InputIllegalTypeTestMemberModifiers.java",
@@ -319,7 +317,6 @@ public final class InlineConfigParser {
             "checks/coding/illegaltype/InputIllegalTypeSameFileNameFalsePositive.java",
             "checks/coding/illegaltype/InputIllegalTypeTestSameFileNameGeneral.java",
             "checks/coding/illegaltype/InputIllegalTypeTestStarImports.java",
-            "checks/coding/illegaltype/InputIllegalTypeTestStaticImports.java",
             "checks/coding/noclone/Example1.java",
             "checks/coding/unusedlocalvariable/Example1.java",
             "checks/coding/unusedlocalvariable/Example2.java",
@@ -343,17 +340,6 @@ public final class InlineConfigParser {
             "checks/coding/unusedlocalvariable/"
                     + "InputUnusedLocalVariablePatternVariablesCondition2.java",
             "checks/coding/unusedlocalvariable/InputUnusedLocalVariableUnnamedTryCatch.java",
-            "checks/imports/avoidstarimport/InputAvoidStarImportExcludes.java",
-            "checks/imports/importorder/Example10.java",
-            "checks/regexp/regexpmultiline/InputRegexpMultilineSemantic8.java",
-            "checks/regexp/regexpmultiline/InputRegexpMultilineSemantic5.java",
-            "checks/regexp/regexpmultiline/InputRegexpMultilineSemantic2.java",
-            "checks/regexp/regexpmultiline/InputRegexpMultilineMultilineSupport.java",
-            "checks/regexp/regexpmultiline/InputRegexpMultilineMultilineSupport2.java",
-            "checks/regexp/regexpmultiline/InputRegexpMultilineSemantic7.java",
-            "checks/regexp/regexpsingleline/Example2.java",
-            "checks/regexp/regexpsingleline/UseCase1.java",
-            "checks/sizes/recordcomponentnumber/Example1.java",
             "checks/sizes/recordcomponentnumber/Example2.java",
             "checks/whitespace/separatorwrap/Example1.java",
             "com/google/checkstyle/test/chapter5naming/rule522classnames/"
@@ -362,11 +348,7 @@ public final class InlineConfigParser {
                     + "InputUnderscoreUsedInNames.java",
             "com/openjdk/checkstyle/test/chapterformatting/"
                     + "ruleorderofconstructorsandoverloadedmethods/"
-                    + "InputOrderOfConstructorsAndOverloadedMethodsOne.java",
-            "com/openjdk/checkstyle/test/chapternaming/ruletypevariables/"
-                    + "InputTypeVariablesOne.java",
-            "com/openjdk/checkstyle/test/chapternaming/rulevariables/"
-                    + "InputVariablesInvalid.java"
+                    + "InputOrderOfConstructorsAndOverloadedMethodsOne.java"
     );
 
     /**

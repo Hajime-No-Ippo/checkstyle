@@ -51,6 +51,7 @@ Aqj
 archunit
 arity
 Arquillian
+arraybracketnowhitespace
 arraycopy
 arraysquarebracketsattype
 arraytrailingcomma
@@ -82,6 +83,7 @@ Autowiring
 avoiddoublebraceinitialization
 avoidescapedunicodecharacters
 avoidinlineconditionals
+avoidlatin
 avoidnestedblocks
 avoidnoargumentsuperconstructorcall
 avoidstarimport
@@ -127,6 +129,7 @@ breadcrumbs
 BSR
 Bsubscribe
 BTest
+btn
 btnfrs
 buf
 bugdatabase
@@ -147,7 +150,7 @@ catchparametername
 cba
 cbeaff
 CComments
-cdata
+CDATA
 cde
 Cdi
 Cfg
@@ -161,6 +164,7 @@ chapternaming
 chapterprogrammingpractices
 charset
 CHDBEFIF
+checkbox
 checkchmod
 checkerframework
 checkmodule
@@ -173,7 +177,6 @@ chmod
 chr
 ci
 cimg
-Cinit
 circleci
 cirrusci
 classannotations
@@ -189,7 +192,7 @@ clazz
 clemens
 Clickable
 Cloneable
-clss
+cls
 cmdline
 cmp
 cmt
@@ -197,7 +200,7 @@ CNAME
 Cnt
 cobertura
 codacy
-codebases
+codebase
 codeclimate
 codeconventions
 codecov
@@ -240,6 +243,7 @@ css
 cstyle
 csv
 csvfilterelement
+cta
 ctc
 ctor
 ctx
@@ -317,12 +321,12 @@ Djacoco
 Djapicmp
 Djdepend
 Dlinkcheck
+Dlychee
 DMail
 Dmaven
 Dmdep
 dnd
 Dnew
-doccheck
 doccomments
 docdefaultconstr
 Dockter
@@ -357,6 +361,7 @@ Duser
 dv
 Dversion
 Dxml
+eb
 EBFF
 EBNF
 ecj
@@ -389,7 +394,6 @@ ent
 enum
 eol
 eot
-epl
 equalsavoidnull
 equalshashcode
 equalsverifier
@@ -450,6 +454,7 @@ fileorganization
 filepath
 fileset
 filesetcheck
+filesgenerator
 filestructure
 filesystem
 filetab
@@ -463,12 +468,12 @@ finalparameters
 findbugs
 Findentation
 findstr
-firefox
 firstsentence
 FIXME
 Fjava
 Fjavadoc
 fluido
+fluxzero
 Fmain
 Fmessages
 Fmetrics
@@ -500,7 +505,6 @@ funmodifiablecollection
 Fwhitespace
 Fx
 Fxq
-gav
 Gdrox
 generalform
 genericwhitespace
@@ -512,6 +516,7 @@ gitattributes
 github
 githubusercontent
 Gjs
+GLIBC
 globbing
 GMetrics
 gnupg
@@ -528,7 +533,6 @@ gpgv
 gradle
 gradlew
 graphicsenv
-Grenner
 grep
 grepped
 groovyism
@@ -551,7 +555,6 @@ Haml
 Hardcoded
 hashcode
 hashtable
-HASHTAG
 hazelcast
 hbase
 hcoles
@@ -592,6 +595,7 @@ Igno
 IGNORETHIS
 igorminar
 Ilja
+illegalblocktag
 illegalcatch
 illegalex
 illegalidentifiername
@@ -666,6 +670,7 @@ javadocmissingwhitespaceafterasterisk
 javadocpackage
 javadocparagraph
 javadocpropertiesgenerator
+javadocregexp
 javadoctagcontinuationindentation
 javadoctags
 javadoctype
@@ -700,7 +705,6 @@ jdt
 jedit
 jenkins
 jep
-jeremymanson
 jessesquires
 jetbrains
 JFile
@@ -763,8 +767,9 @@ keyname
 keyscan
 konstantinos
 Kordas
-Kotlin
+kotlin
 Kp
+kts
 lambdabodylength
 lambdaparametername
 LBRACE
@@ -859,7 +864,6 @@ mixin
 mkdir
 MKo
 mkordas
-MLINKCHECK
 MMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMM
 moby
@@ -868,6 +872,7 @@ mockito
 Modello
 modifiedcontrolvariable
 modifierorder
+moduleinfo
 Mohnen
 mojohaus
 moks
@@ -876,7 +881,6 @@ moradan
 mozilla
 MRELEASE
 mstudman
-MTAGLIST
 multicharacter
 multifileregexpheader
 multiline
@@ -886,6 +890,7 @@ multiplestringliterals
 multiplevariabledeclarations
 Multiset
 multithreading
+musl
 mutableexception
 MVC
 mvn
@@ -920,6 +925,7 @@ nestedtrydepth
 netbeans
 newdomain
 newlineatendoffile
+NEX
 Nfc
 NFF
 Nfo
@@ -1070,7 +1076,6 @@ patreon
 patternvariableassignment
 patternvariablename
 Paulicke
-paypal
 pbludov
 Pcheckstyle
 pdf
@@ -1092,6 +1097,7 @@ pkgextra
 pkx
 PLHM
 plugin
+Plychee
 PMB
 pmd
 pmdruleset
@@ -1104,6 +1110,7 @@ POJO
 Popup
 Postgresql
 prebuilts
+preferliteraljavadocinlinetag
 prefs
 PRESIZE
 prettyprint
@@ -1173,7 +1180,6 @@ requireemptylinebeforeblocktaggroup
 requirethis
 resourceleak
 Rethrown
-Rethrows
 returncount
 returnsreceiver
 returntag
@@ -1196,7 +1202,9 @@ rpmfind
 rq
 Rr
 Rsa
+rsh
 RSPEC
+rsync
 Rtl
 ru
 ruleannotations
@@ -1253,7 +1261,6 @@ scache
 Schneeberger
 scm
 scopeutil
-scp
 screenshot
 Scss
 sdk
@@ -1281,6 +1288,7 @@ singleline
 singlelined
 singlelinejavadoc
 singlespaceseparator
+sitetoc
 sivakumar
 Slawinski
 slf
@@ -1342,6 +1350,7 @@ styleguide
 subdir
 subelements
 subext
+sublink
 subscope
 sudo
 suitebuilder
@@ -1412,7 +1421,6 @@ timeline
 timezone
 TKN
 tmp
-tmpdir
 tngtech
 toc
 todo
@@ -1421,6 +1429,7 @@ tokenization
 tokenizer
 tokentype
 tolist
+toml
 Toolbar
 toolongpackagetotestcoveragegooglesjavastylerule
 TOSTRING
@@ -1438,6 +1447,7 @@ tstamp
 tt
 tta
 ttf
+Tvar
 tvf
 tw
 typebodypadding

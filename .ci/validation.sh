@@ -409,6 +409,7 @@ no-error-xwiki)
   CS_POM_VERSION="$(getCheckstylePomVersion)"
   ANTLR4_VERSION="$(getMavenProperty 'antlr4.version')"
   echo "version:${CS_POM_VERSION} antlr4:${ANTLR4_VERSION}"
+
   ./mvnw -e --no-transfer-progress clean install -Pno-validations
   echo "Checkout target sources ..."
   checkout_from "https://github.com/xwiki/xwiki-commons.git"
@@ -1597,16 +1598,7 @@ javadoc)
   ;;
 
 openrewrite-checkstyle-auto-fix)
-  echo "Cloning and building OpenRewrite recipes..."
-  PROJECT_ROOT="$(pwd)"
   export MAVEN_OPTS="-Xmx4g -Xms2g"
-
-  mkdir -p .ci-temp && cd .ci-temp
-  git clone https://github.com/checkstyle/checkstyle-openrewrite-recipes.git
-  cd checkstyle-openrewrite-recipes
-  ./mvnw -e --no-transfer-progress clean install -DskipTests
-
-  cd "$PROJECT_ROOT"
 
   echo "Running Checkstyle validation to get report for openrewrite..."
   set +e
@@ -1619,21 +1611,10 @@ openrewrite-checkstyle-auto-fix)
 
   echo "Checking for uncommitted changes..."
   ./.ci/print-diff-as-patch.sh target/rewrite.patch
-
-  rm -rf .ci-temp/checkstyle-openrewrite-recipes
   ;;
 
 openrewrite-refaster-rules-1)
-  echo "Cloning and building OpenRewrite recipes..."
-  PROJECT_ROOT="$(pwd)"
   export MAVEN_OPTS="-Xmx4g -Xms2g"
-
-  mkdir -p .ci-temp && cd .ci-temp
-  git clone https://github.com/checkstyle/checkstyle-openrewrite-recipes.git
-  cd checkstyle-openrewrite-recipes
-  ./mvnw -e --no-transfer-progress clean install -DskipTests
-
-  cd "$PROJECT_ROOT"
 
   echo "Running RefasterRules Part 1 recipes..."
   ./mvnw -e --no-transfer-progress rewrite:run \
@@ -1642,21 +1623,10 @@ openrewrite-refaster-rules-1)
 
   echo "Checking for uncommitted changes..."
   ./.ci/print-diff-as-patch.sh target/rewrite.patch
-
-  rm -rf .ci-temp/checkstyle-openrewrite-recipes
   ;;
 
 openrewrite-refaster-rules-2)
-  echo "Cloning and building OpenRewrite recipes..."
-  PROJECT_ROOT="$(pwd)"
   export MAVEN_OPTS="-Xmx4g -Xms2g"
-
-  mkdir -p .ci-temp && cd .ci-temp
-  git clone https://github.com/checkstyle/checkstyle-openrewrite-recipes.git
-  cd checkstyle-openrewrite-recipes
-  ./mvnw -e --no-transfer-progress clean install -DskipTests
-
-  cd "$PROJECT_ROOT"
 
   echo "Running RefasterRules Part 2 recipes..."
   ./mvnw -e --no-transfer-progress rewrite:run \
@@ -1665,21 +1635,10 @@ openrewrite-refaster-rules-2)
 
   echo "Checking for uncommitted changes..."
   ./.ci/print-diff-as-patch.sh target/rewrite.patch
-
-  rm -rf .ci-temp/checkstyle-openrewrite-recipes
   ;;
 
 openrewrite-static-analysis)
-  echo "Cloning and building OpenRewrite recipes..."
-  PROJECT_ROOT="$(pwd)"
   export MAVEN_OPTS="-Xmx4g -Xms2g"
-
-  mkdir -p .ci-temp && cd .ci-temp
-  git clone https://github.com/checkstyle/checkstyle-openrewrite-recipes.git
-  cd checkstyle-openrewrite-recipes
-  ./mvnw -e --no-transfer-progress clean install -DskipTests
-
-  cd "$PROJECT_ROOT"
 
   echo "Running StaticAnalysis recipes..."
   ./mvnw -e --no-transfer-progress rewrite:run \
@@ -1688,8 +1647,6 @@ openrewrite-static-analysis)
 
   echo "Checking for uncommitted changes..."
   ./.ci/print-diff-as-patch.sh target/rewrite.patch
-
-  rm -rf .ci-temp/checkstyle-openrewrite-recipes
   ;;
 
 *)
