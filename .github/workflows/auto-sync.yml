@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Sync Upstream Executable
-        uses: a2ren/fork-sync-upstream-action@v1.0
+        uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
         with:
           upstream_repo: 'checkstyle/checkstyle'
           upstream_branch: 'main'
