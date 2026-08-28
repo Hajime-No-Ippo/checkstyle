@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '0 0 * * *' # 每天半夜自動同步上游最新 Code
   workflow_dispatch: # 讓你可以在 Actions 頁面手動觸發
+    inputs:
+      sync_test_mode:
+        type: boolean
+        default: false
+        description: 'Run tests instead of true action'
 
 jobs:
   sync_latest_from_upstream:
@@ -14,7 +19,7 @@ jobs:
     # REQUIRED step
     # Step 1: run a standard checkout action, provided by github
     - name: Checkout target repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         # optional: set the branch to checkout,
         # sync action checks out your 'target_sync_branch' anyway
