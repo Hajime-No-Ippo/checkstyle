@@ -142,6 +142,7 @@ public class SuppressWarningsCheck extends AbstractCheck {
             TokenTypes.COMPACT_CTOR_DEF,
             TokenTypes.RECORD_DEF,
             TokenTypes.PATTERN_VARIABLE_DEF,
+            TokenTypes.MODULE_DEF,
         };
     }
 
@@ -267,9 +268,9 @@ public class SuppressWarningsCheck extends AbstractCheck {
      * Strips a single double quote from the front and back of a string.
      *
      * <p>For example:</p>
-     * <pre>
-     * Input String = "unchecked"
-     * </pre>
+     * {@snippet lang="text" :
+     *     Input String = "unchecked"
+     * }
      * Output String = unchecked
      *
      * @param warning the warning string

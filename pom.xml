@@ -203,7 +203,7 @@
     <projectVersion>${project.version}</projectVersion>
     <antlr4.version>4.13.2</antlr4.version>
     <site.plugin.version>3.22.0</site.plugin.version>
-    <spotbugs.plugin.version>4.10.3.0</spotbugs.plugin.version>
+    <spotbugs.plugin.version>4.10.4.0</spotbugs.plugin.version>
     <pmd.plugin.version>3.28.0</pmd.plugin.version>
     <pmd.version>7.26.0</pmd.version>
     <jacoco.plugin.version>0.8.15</jacoco.plugin.version>
@@ -211,7 +211,7 @@
     <slf4j.version>2.0.18</slf4j.version>
     <saxon.version>12.9</saxon.version>
     <checkstyle.plugin.version>3.6.0</checkstyle.plugin.version>
-    <checkstyle-files-generator.version>1.0.1</checkstyle-files-generator.version>
+    <checkstyle-files-generator.version>1.0.2</checkstyle-files-generator.version>
     <sevntu.checkstyle.plugin.version>1.44.1</sevntu.checkstyle.plugin.version>
     <sevntu-checkstyle-check.checkstyle.version>
       10.4
@@ -303,7 +303,8 @@
       -Xep:StreamResourceLeak:ERROR
       -Xep:StringJoin:ERROR
       -Xep:StringJoining:ERROR
-      -Xep:StringSplitter:ERROR
+      <!-- Reason at https://github.com/checkstyle/checkstyle/issues/21036. -->
+      -Xep:StringSplitter:OFF
       -Xep:TimeZoneUsage:ERROR
       -Xep:TruthAssertExpected:ERROR
       -Xep:TypeParameterUnusedInFormals:ERROR
@@ -329,13 +330,13 @@
       <dependency>
         <groupId>net.bytebuddy</groupId>
         <artifactId>byte-buddy</artifactId>
-        <version>1.18.11</version>
+        <version>1.18.12</version>
         <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>net.bytebuddy</groupId>
         <artifactId>byte-buddy-agent</artifactId>
-        <version>1.18.11</version>
+        <version>1.18.12</version>
         <scope>test</scope>
       </dependency>
     </dependencies>
@@ -376,7 +377,7 @@
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>33.6.0-jre</version>
+      <version>33.7.1-jre</version>
       <exclusions>
         <exclusion>
           <groupId>org.checkerframework</groupId>
@@ -434,7 +435,7 @@
     <dependency>
       <groupId>nl.jqno.equalsverifier</groupId>
       <artifactId>equalsverifier</artifactId>
-      <version>4.5</version>
+      <version>4.5.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -506,15 +507,6 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
-
-  <!-- that repositories are required for testing plugin's snapshot version -->
-  <pluginRepositories>
-    <pluginRepository>
-      <id>nexus-codehaus-snapshot</id>
-      <name>Codehaus Snapshots</name>
-      <url>https://oss.sonatype.org/content/repositories/codehaus-snapshots/</url>
-    </pluginRepository>
-  </pluginRepositories>
 
   <build>
     <pluginManagement>
@@ -616,7 +608,7 @@
         <plugin>
           <groupId>com.diffplug.spotless</groupId>
           <artifactId>spotless-maven-plugin</artifactId>
-          <version>3.9.0</version>
+          <version>3.10.0</version>
           <configuration>
             <java>
               <includes>
@@ -684,12 +676,12 @@
             <dependency>
               <groupId>org.openrewrite.recipe</groupId>
               <artifactId>rewrite-migrate-java</artifactId>
-              <version>3.42.0</version>
+              <version>3.42.1</version>
             </dependency>
             <dependency>
               <groupId>org.openrewrite.recipe</groupId>
               <artifactId>rewrite-static-analysis</artifactId>
-              <version>2.41.0</version>
+              <version>2.41.1</version>
             </dependency>
             <dependency>
               <groupId>org.openrewrite.recipe</groupId>
@@ -2281,6 +2273,8 @@
             <arg>${project.basedir}/config/lychee.toml</arg>
             <arg>--root-dir</arg>
             <arg>${project.build.directory}/site</arg>
+            <arg>--github-token</arg>
+            <arg>${env.GITHUB_TOKEN}</arg>
           </args>
           <failOnError>true</failOnError>
         </configuration>
@@ -3557,6 +3551,7 @@
                 <param>com.puppycrawl.tools.checkstyle.checks.coding.UnusedCatchParameterShouldBeUnnamedCheck*</param>
                 <param>com.puppycrawl.tools.checkstyle.checks.coding.UnusedLambdaParameterShouldBeUnnamedCheck*</param>
                 <param>com.puppycrawl.tools.checkstyle.checks.coding.UnusedTryResourceShouldBeUnnamedCheck*</param>
+                <param>com.puppycrawl.tools.checkstyle.checks.coding.UnusedPrivateFieldCheck*</param>
                 <param>com.puppycrawl.tools.checkstyle.checks.coding.PatternVariableAssignmentCheck*</param>
                 <param>com.puppycrawl.tools.checkstyle.checks.coding.TextBlockGoogleStyleFormattingCheck*</param>
               </targetClasses>
@@ -3590,6 +3585,7 @@
                 <param>com.puppycrawl.tools.checkstyle.checks.coding.SimplifyBooleanReturnCheckTest</param>
                 <param>com.puppycrawl.tools.checkstyle.checks.coding.UnusedCatchParameterShouldBeUnnamedCheckTest</param>
                 <param>com.puppycrawl.tools.checkstyle.checks.coding.UnusedLambdaParameterShouldBeUnnamedCheckTest</param>
+                <param>com.puppycrawl.tools.checkstyle.checks.coding.UnusedPrivateFieldCheckTest</param>
                 <param>com.puppycrawl.tools.checkstyle.checks.coding.UnusedTryResourceShouldBeUnnamedCheckTest</param>
                 <param>com.puppycrawl.tools.checkstyle.checks.coding.PatternVariableAssignmentCheckTest</param>
                 <param>com.puppycrawl.tools.checkstyle.checks.coding.TextBlockGoogleStyleFormattingCheckTest</param>
@@ -5333,6 +5329,9 @@
                   com.puppycrawl.tools.checkstyle.checks.annotation.MissingOverrideCheckTest
                 </param>
                 <param>
+                  com.puppycrawl.tools.checkstyle.checks.whitespace.NoLineWrapCheckTest
+                </param>
+                <param>
                   com.puppycrawl.tools.checkstyle.checks.coding.IllegalTypeCheckTest
                 </param>
                 <param>
@@ -5364,6 +5363,7 @@
               </targetTests>
               <avoidCallsTo>
                 <avoidCallsTo>com.puppycrawl.tools.checkstyle.utils.UnmodifiableCollectionUtil</avoidCallsTo>
+                <avoidCallsTo>com.puppycrawl.tools.checkstyle.utils.NullUtil</avoidCallsTo>
               </avoidCallsTo>
               <excludedTestClasses>
                 <param>*.Input*</param>

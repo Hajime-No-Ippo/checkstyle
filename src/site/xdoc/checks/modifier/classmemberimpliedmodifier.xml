@@ -51,12 +51,24 @@
           compiler does not require the <code>static</code> modifier. This check provides the ability to enforce
           that the <code>static</code> modifier is explicitly coded and not implicitly added by the compiler.
         </p>
-        <div class="wrapper"><pre class="prettyprint"><code class="language-java">
+        <div class="wrapper"><pre class="prettyprint"><code>
 public final class Person {
   enum Age {  // violation
     CHILD, ADULT
   }
 }
+        </code></pre></div>
+
+        <p>
+          Enum, interface, and record declarations in a compact source file are members of the
+          implicitly declared class, so they are also implicitly <code>static</code>.
+        </p>
+        <div class="wrapper"><pre class="prettyprint"><code class="language-java">
+enum Age {  // violation
+  CHILD, ADULT
+}
+
+void main() {}
         </code></pre></div>
 
         <p>

@@ -89,10 +89,10 @@ import org.xml.sax.SAXException;
  * </ul>
  *
  * <p>Usage (called by exec-maven-plugin in pom.xml):</p>
- * <pre>
- *   java SearchIndexGenerator &lt;xdocsDir&gt; &lt;outputFilePath&gt;
+ * {@snippet lang="text" :
+ *   java SearchIndexGenerator <xdocsDir> <outputFilePath>
  *   java SearchIndexGenerator src/site/xdoc target/site/search-index.json
- * </pre>
+ * }
  */
 public final class SearchIndexGenerator {
 
@@ -589,9 +589,9 @@ public final class SearchIndexGenerator {
      *
      * @param xmlFile the XDoc source file to parse
      * @return list of entries, one per top-level section found
+     * @throws IOException on file read failure
      * @throws ParserConfigurationException on XML parser setup failure
      * @throws SAXException on XML parse error
-     * @throws IOException on file read failure
      */
     private static List<SearchIndexEntry> buildGeneralPageEntries(File xmlFile)
             throws ParserConfigurationException, SAXException, IOException {
@@ -653,12 +653,12 @@ public final class SearchIndexGenerator {
      * visible in search result listings without needing to open the page.</p>
      *
      * <p>Confirmed XDoc template structure for the Examples subsection:</p>
-     * <pre>
-     *   &lt;p id="Example1-config"&gt;To configure the check...&lt;/p&gt;
-     *   &lt;macro name="example"&gt;&lt;param name="type" value="config"/&gt;&lt;/macro&gt;
-     *   &lt;p id="Example1-code"&gt;Example:&lt;/p&gt;
-     *   &lt;macro name="example"&gt;&lt;param name="type" value="code"/&gt;&lt;/macro&gt;
-     * </pre>
+     * {@snippet lang="text" :
+     *   <p id="Example1-config">To configure the check...</p>
+     *   <macro name="example"><param name="type" value="config"/></macro>
+     *   <p id="Example1-code">Example:</p>
+     *   <macro name="example"><param name="type" value="code"></macro>
+     * }
      *
      * @param doc      the parsed XDoc document
      * @param baseUrl  the page url without anchor
@@ -892,9 +892,9 @@ public final class SearchIndexGenerator {
      *
      * @param xmlFile the XDoc source file
      * @return the parsed Document
+     * @throws IOException on file read failure
      * @throws ParserConfigurationException on XML parser setup failure
      * @throws SAXException on XML parse error
-     * @throws IOException on file read failure
      */
     private static Document parseXml(File xmlFile)
             throws ParserConfigurationException, SAXException, IOException {

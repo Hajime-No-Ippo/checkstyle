@@ -361,7 +361,6 @@ Duser
 dv
 Dversion
 Dxml
-eb
 EBFF
 EBNF
 ecj
@@ -404,6 +403,7 @@ esac
 Eslint
 esslingen
 etsy
+euo
 ev
 Evt
 exceptionoverrides
@@ -617,6 +617,7 @@ importnolinewrap
 importorder
 importrule
 imprt
+inappropriatejavadocblocktagsontype
 Incompatabilities
 indentcontinuationlines
 Inet
@@ -624,6 +625,7 @@ infinispan
 initializedfields
 inlineconfigparser
 Inlined
+inlinelinks
 inlinetags
 innerassignment
 Innerclass
@@ -663,16 +665,22 @@ javadoc
 javadocblocktaglocation
 javadoccontentlocation
 javadocdetailnodeparser
+javadocendcommentdelimiter
 javadocleadingasteriskalign
+javadoclinkfirstoccurrence
+javadoclinkwellknownapi
 javadocmethod
 javadocmissingleadingasterisk
 javadocmissingwhitespaceafterasterisk
+javadocnoerrorinthrowstag
 javadocpackage
 javadocparagraph
+javadocparamorder
 javadocpropertiesgenerator
 javadocregexp
 javadoctagcontinuationindentation
 javadoctags
+javadocthrowsorder
 javadoctype
 javadocutil
 javadocvariable
@@ -887,6 +895,7 @@ multiline
 multilinecommentleadingasteriskpresence
 Multimap
 multiplestringliterals
+multipletags
 multiplevariabledeclarations
 Multiset
 multithreading
@@ -1110,6 +1119,7 @@ POJO
 Popup
 Postgresql
 prebuilts
+prefercodeorsnippetjavadocinlinetag
 preferliteraljavadocinlinetag
 prefs
 PRESIZE
@@ -1178,6 +1188,7 @@ reportyml
 requiredtags
 requireemptylinebeforeblocktaggroup
 requirethis
+Rescanning
 resourceleak
 Rethrown
 returncount
@@ -1474,6 +1485,7 @@ uninterned
 uniq
 uniqueproperties
 Unitless
+unnecessaryfullyqualifiedtype
 unnecessarynullcheckwithinstanceof
 unnecessaryparentheses
 unnecessarysemicolonafteroutertypedeclaration
@@ -1491,6 +1503,8 @@ unusedcatchparametershouldbeunnamed
 unusedimports
 unusedlambdaparametershouldbeunnamed
 unusedlocalvariable
+Unusedprivate
+unusedprivatefield
 unusedtryresourceshouldbeunnamed
 uppercased
 upperell

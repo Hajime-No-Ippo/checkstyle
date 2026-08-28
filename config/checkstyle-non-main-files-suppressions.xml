@@ -321,6 +321,10 @@
   <suppress id="propertiesMacroMustExist"
          files="src/site/xdoc/checks/imports/redundantimport.xml.template"/>
   <suppress id="propertiesMacroMustExist"
+         files="src[\\/]site[\\/]xdoc[\\/]checks[\\/]imports[\\/]unnecessaryfullyqualifiedtype.xml.template"/>
+  <suppress id="propertiesMacroMustExist"
+         files="src/site/xdoc/checks/javadoc/javadocendcommentdelimiter.xml.template"/>
+  <suppress id="propertiesMacroMustExist"
          files="src/site/xdoc/checks/javadoc/invalidjavadocposition.xml.template"/>
   <suppress id="propertiesMacroMustExist"
          files="src/site/xdoc/checks/javadoc/missingjavadocpackage.xml.template"/>
@@ -358,6 +362,8 @@
             files="src/site/xdoc/checks/misc/multilinecommentleadingasteriskpresence.xml.template"/>
   <suppress id="propertiesMacroMustExist"
             files="src/site/xdoc/checks/naming/googlemethodname.xml.template"/>
+  <suppress id="propertiesMacroMustExist"
+            files="src[\\/]site[\\/]xdoc[\\/]checks[\\/]coding[\\/]unusedprivatefield.xml.template"/>
 
   <!-- Index templates don't need since macro by design -->
   <suppress id="sinceMacroMustExist"

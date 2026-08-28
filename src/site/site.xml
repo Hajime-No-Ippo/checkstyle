@@ -202,6 +202,7 @@
           <item name="UnusedLambdaParameterShouldBeUnnamed"
                 href="checks/coding/unusedlambdaparametershouldbeunnamed.html"/>
           <item name="UnusedLocalVariable" href="checks/coding/unusedlocalvariable.html"/>
+          <item name="UnusedPrivateField" href="checks/coding/unusedprivatefield.html"/>
           <item name="UnusedTryResourceShouldBeUnnamed"
                 href="checks/coding/unusedtryresourceshouldbeunnamed.html"/>
           <item name="UseEnhancedSwitch"
@@ -224,26 +225,40 @@
           <item name="ImportControl" href="checks/imports/importcontrol.html"/>
           <item name="ImportOrder" href="checks/imports/importorder.html"/>
           <item name="RedundantImport" href="checks/imports/redundantimport.html"/>
+          <item name="UnnecessaryFullyQualifiedType"
+                href="checks/imports/unnecessaryfullyqualifiedtype.html"/>
           <item name="UnusedImports" href="checks/imports/unusedimports.html"/>
         </item>
         <item name="Javadoc Comments" href="checks/javadoc/index.html" collapse="true">
           <item name="AtclauseOrder" href="checks/javadoc/atclauseorder.html"/>
           <item name="IllegalBlockTag" href="checks/javadoc/illegalblocktag.html"/>
+          <item name="InappropriateJavadocBlockTagsOnType"
+                href="checks/javadoc/inappropriatejavadocblocktagsontype.html"/>
           <item name="InvalidJavadocPosition" href="checks/javadoc/invalidjavadocposition.html"/>
           <item name="JavadocBlockTagLocation" href="checks/javadoc/javadocblocktaglocation.html"/>
           <item name="JavadocContentLocation" href="checks/javadoc/javadoccontentlocation.html"/>
+          <item name="JavadocEndCommentDelimiter"
+                href="checks/javadoc/javadocendcommentdelimiter.html"/>
           <item name="JavadocLeadingAsteriskAlign"
                 href="checks/javadoc/javadocleadingasteriskalign.html"/>
+          <item name="JavadocLinkFirstOccurrence"
+                href="checks/javadoc/javadoclinkfirstoccurrence.html"/>
+          <item name="JavadocLinkWellKnownApi"
+                href="checks/javadoc/javadoclinkwellknownapi.html"/>
           <item name="JavadocMethod" href="checks/javadoc/javadocmethod.html"/>
           <item name="JavadocMissingLeadingAsterisk"
                 href="checks/javadoc/javadocmissingleadingasterisk.html"/>
           <item name="JavadocMissingWhitespaceAfterAsterisk"
                 href="checks/javadoc/javadocmissingwhitespaceafterasterisk.html"/>
+          <item name="JavadocNoErrorInThrowsTag"
+                href="checks/javadoc/javadocnoerrorinthrowstag.html"/>
           <item name="JavadocPackage" href="checks/javadoc/javadocpackage.html"/>
           <item name="JavadocParagraph" href="checks/javadoc/javadocparagraph.html"/>
+          <item name="JavadocParamOrder" href="checks/javadoc/javadocparamorder.html"/>
           <item name="JavadocRegexp" href="checks/javadoc/javadocregexp.html"/>
           <item name="JavadocTagContinuationIndentation"
                 href="checks/javadoc/javadoctagcontinuationindentation.html"/>
+          <item name="JavadocThrowsOrder" href="checks/javadoc/javadocthrowsorder.html"/>
           <item name="JavadocType" href="checks/javadoc/javadoctype.html"/>
           <item name="JavadocVariable" href="checks/javadoc/javadocvariable.html"/>
           <item name="MissingJavadocMethod" href="checks/javadoc/missingjavadocmethod.html"/>
@@ -251,6 +266,8 @@
           <item name="MissingJavadocType" href="checks/javadoc/missingjavadoctype.html"/>
           <item name="NonEmptyAtclauseDescription"
                 href="checks/javadoc/nonemptyatclausedescription.html"/>
+          <item name="PreferCodeOrSnippetJavadocInlineTag"
+                href="checks/javadoc/prefercodeorsnippetjavadocinlinetag.html"/>
           <item name="PreferLiteralJavadocInlineTag"
                 href="checks/javadoc/preferliteraljavadocinlinetag.html"/>
           <item name="RequireEmptyLineBeforeBlockTagGroup"

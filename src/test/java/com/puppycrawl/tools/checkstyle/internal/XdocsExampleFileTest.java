@@ -109,9 +109,7 @@ public class XdocsExampleFileTest {
         "checks/naming/patternvariablename/",
         "checks/outertypefilename/",
         "checks/regexp/regexpmultiline/",
-        "checks/regexp/regexpsingleline/",
-        "checks/trailingcomment/",
-        "checks/whitespace/filetabcharacter/"
+        "checks/regexp/regexpsingleline/"
     );
 
     /**
@@ -121,7 +119,6 @@ public class XdocsExampleFileTest {
      * <p>Until: <a href="https://github.com/checkstyle/checkstyle/issues/21207">...</a>
      */
     private static final Set<String> MODULES_WITHOUT_DEFAULT_FIRST_EXAMPLE = Set.of(
-        "checks/coding/illegaltokentext",
         "checks/translation"
     );
 
@@ -499,7 +496,7 @@ public class XdocsExampleFileTest {
         try {
             final TestInputConfiguration parsed =
                     InlineConfigParser.parse(exampleFile.toString());
-            final List<TestInputViolation> violations = parsed.getViolations();
+            final List<TestInputViolation> violations = parsed.violations();
 
             final boolean hasUnspecifiedMessage = violations.stream()
                     .anyMatch(violation -> violation.message() == null);

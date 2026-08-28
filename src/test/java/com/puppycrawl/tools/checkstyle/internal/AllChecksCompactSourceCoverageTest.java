@@ -104,7 +104,6 @@ public class AllChecksCompactSourceCoverageTest {
         "BooleanExpressionComplexityCheck",
         "CatchParameterNameCheck",
         "ClassDataAbstractionCouplingCheck",
-        "ClassMemberImpliedModifierCheck",
         "ClassTypeParameterNameCheck",
         "CommentsIndentationCheck",
         "ConstantNameCheck",
@@ -155,6 +154,8 @@ public class AllChecksCompactSourceCoverageTest {
         "JavadocBlockTagLocationCheck",
         "JavadocContentLocationCheck",
         "JavadocLeadingAsteriskAlignCheck",
+        "JavadocLinkFirstOccurrenceCheck",
+        "JavadocLinkWellKnownApiCheck",
         "JavadocMethodCheck",
         "JavadocMissingLeadingAsteriskCheck",
         "JavadocMissingWhitespaceAfterAsteriskCheck",
@@ -259,13 +260,13 @@ public class AllChecksCompactSourceCoverageTest {
         "UnusedLambdaParameterShouldBeUnnamedCheck",
         "UnusedLocalVariableCheck",
         "UnusedTryResourceShouldBeUnnamedCheck",
+        "UnnecessaryFullyQualifiedTypeCheck",
         "UpperEllCheck",
         "UseEnhancedSwitchCheck",
         "VariableDeclarationUsageDistanceCheck",
         "WhenShouldBeUsedCheck",
         "WhitespaceAfterCheck",
-        "WhitespaceAroundCheck",
-        "WriteTagCheck"
+        "WhitespaceAroundCheck"
     );
 
     @Test
@@ -389,7 +390,7 @@ public class AllChecksCompactSourceCoverageTest {
         }
         for (Path input : inputs) {
             final TestInputConfiguration config = InlineConfigParser.parse(input.toString());
-            for (ModuleInputConfiguration module : config.getChildrenModules()) {
+            for (ModuleInputConfiguration module : config.childrenModules()) {
                 if (checkClassName.equals(module.getModuleName())) {
                     nonDefaultsPerInput.add(module.getNonDefaultProperties().keySet());
                 }

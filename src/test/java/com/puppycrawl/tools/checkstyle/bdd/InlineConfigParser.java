@@ -303,30 +303,9 @@ public final class InlineConfigParser {
      */
     private static final Set<String> SUPPRESSED_VALIDATE_MESSAGE_FILES = Set.of(
             "checks/coding/equalshashcode/Example1.java",
-            "checks/coding/illegaltype/InputIllegalTypeTestEnhancedInstanceof.java",
-            "checks/coding/illegaltype/InputIllegalTypeTestLegalAbstractClassNames.java",
-            "checks/coding/illegaltype/InputIllegalTypeTestMemberModifiers.java",
-            "checks/coding/illegaltype/InputIllegalTypeTestPlainAndArraysTypes.java",
-            "checks/coding/illegaltype/"
-                    + "InputIllegalTypeRecordsWithMemberModifiersDefault.java",
-            "checks/coding/illegaltype/InputIllegalTypeRecordsWithMemberModifiersFinal.java",
-            "checks/coding/illegaltype/"
-                    + "InputIllegalTypeRecordsWithMemberModifiersPrivateFinal.java",
-            "checks/coding/illegaltype/"
-                    + "InputIllegalTypeRecordsWithMemberModifiersPublicProtectedStatic.java",
-            "checks/coding/illegaltype/InputIllegalTypeSameFileNameFalsePositive.java",
-            "checks/coding/illegaltype/InputIllegalTypeTestSameFileNameGeneral.java",
-            "checks/coding/illegaltype/InputIllegalTypeTestStarImports.java",
             "checks/coding/noclone/Example1.java",
             "checks/coding/unusedlocalvariable/Example1.java",
-            "checks/coding/unusedlocalvariable/Example2.java",
-            "checks/coding/unusedlocalvariable/Example4.java",
             "checks/coding/unusedlocalvariable/InputUnusedLocalVariable3.java",
-            "checks/coding/unusedlocalvariable/InputUnusedLocalVariableNestedClasses4.java",
-            "checks/coding/unusedlocalvariable/InputUnusedLocalVariableNestedClasses5.java",
-            "checks/coding/unusedlocalvariable/InputUnusedLocalVariableNestedClasses6.java",
-            "checks/coding/unusedlocalvariable/"
-                    + "InputUnusedLocalVariableNestedClasses7.java",
             "checks/coding/unusedlocalvariable/"
                     + "InputUnusedLocalVariableAllowNamedPatternVariables.java",
             "checks/coding/unusedlocalvariable/"
@@ -342,8 +321,6 @@ public final class InlineConfigParser {
             "checks/coding/unusedlocalvariable/InputUnusedLocalVariableUnnamedTryCatch.java",
             "checks/sizes/recordcomponentnumber/Example2.java",
             "checks/whitespace/separatorwrap/Example1.java",
-            "com/google/checkstyle/test/chapter5naming/rule522classnames/"
-                    + "InputClassNamesWithUnderscore.java",
             "com/google/checkstyle/test/chapter5naming/rule53camelcase/"
                     + "InputUnderscoreUsedInNames.java",
             "com/openjdk/checkstyle/test/chapterformatting/"
@@ -450,7 +427,7 @@ public final class InlineConfigParser {
                 "com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck");
     }
 
-    /** Stop instances being created. **/
+    /** Stop instances being created. */
     private InlineConfigParser() {
     }
 
@@ -503,7 +480,7 @@ public final class InlineConfigParser {
             throw new CheckstyleException("Failed to set violations in " + inputFilePath, exc);
         }
 
-        return testInputConfigBuilder.build().getViolations();
+        return testInputConfigBuilder.build().violations();
     }
 
     public static List<TestInputViolation> getFilteredViolationsFromInputFile(String inputFilePath)
@@ -522,7 +499,7 @@ public final class InlineConfigParser {
             throw new CheckstyleException("Failed to set violations in " + inputFilePath, exc);
         }
 
-        return testInputConfigBuilder.build().getFilteredViolations();
+        return testInputConfigBuilder.build().filteredViolations();
     }
 
     public static TestInputConfiguration parseWithFilteredViolations(String inputFilePath)
