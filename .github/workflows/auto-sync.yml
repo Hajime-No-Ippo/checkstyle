@@ -2,42 +2,33 @@ name: Sync Upstream
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 每天半夜自動同步上游最新 Code
-  workflow_dispatch: # 讓你可以在 Actions 頁面手動觸發
-    inputs:
-      sync_test_mode:
-        type: boolean
-        default: false
-        description: 'Run tests instead of true action'
+    - cron: '0 0 * * *'  # Daily at midnight
+  workflow_dispatch:
 
 jobs:
-  sync_latest_from_upstream:
+  sync:
     runs-on: ubuntu-latest
-    name: Sync latest commits from upstream repo
+    permissions:
+      contents: write
 
     steps:
-    # REQUIRED step
-    # Step 1: run a standard checkout action, provided by github
-    - name: Checkout target repo
-      uses: actions/checkout@v4
-      with:
-        # optional: set the branch to checkout,
-        # sync action checks out your 'target_sync_branch' anyway
-        # REQUIRED if your upstream repo is private (see wiki)
-        persist-credentials: false
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: master
 
-    # REQUIRED step
-    # Step 2: run the sync action
-    - name: Sync upstream changes
-      id: sync
-      uses: aormsby/Fork-Sync-With-Upstream-action@v3.4.1
-      with:
-        target_sync_branch: master
-        # REQUIRED 'target_repo_token' exactly like this!
-        target_repo_token: ${{ secrets.GITHUB_TOKEN }}
-        upstream_sync_branch: master
-        upstream_sync_repo: checkstyle/checkstyle
-        upstream_repo_access_token: ${{ secrets.UPSTREAM_REPO_SECRET }}
+      - name: Sync upstream
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git remote add upstream https://github.com/checkstyle/checkstyle.git || true
+          git fetch upstream master
+          git merge upstream/master --allow-unrelated-histories -m "chore: sync upstream" || true
 
-        # Set test_mode true during manual dispatch to run tests instead of the true action!!
-        test_mode: ${{ inputs.sync_test_mode }}
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
