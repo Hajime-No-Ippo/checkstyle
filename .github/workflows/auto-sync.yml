@@ -29,6 +29,6 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.UPSTRE }}
+          github_token: ${{ secrets.UPSTREAM_GITHUB_TOKEN }}
           branch: master
           force: true
