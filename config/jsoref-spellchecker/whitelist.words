@@ -27,6 +27,8 @@ amd
 androidx
 annotateddeclarationvisibility
 annotationlocation
+annotationnojavadoc
+annotationnonjavadoc
 annotationonsameline
 annotationusestyle
 annotationutil
@@ -84,6 +86,7 @@ avoiddoublebraceinitialization
 avoidescapedunicodecharacters
 avoidinlineconditionals
 avoidlatin
+avoidmoduleimport
 avoidnestedblocks
 avoidnoargumentsuperconstructorcall
 avoidstarimport
@@ -478,7 +481,7 @@ Fmain
 Fmessages
 Fmetrics
 Fmodifier
-FModule
+fmodule
 Fnaming
 Fopenjdk
 forbiddenapis
@@ -617,6 +620,7 @@ importnolinewrap
 importorder
 importrule
 imprt
+inappropriatejavadocblocktagsonpackage
 inappropriatejavadocblocktagsontype
 Incompatabilities
 indentcontinuationlines
@@ -880,6 +884,8 @@ mockito
 Modello
 modifiedcontrolvariable
 modifierorder
+moduledirectiveorder
+moduleimportorder
 moduleinfo
 Mohnen
 mojohaus
@@ -894,6 +900,8 @@ multifileregexpheader
 multiline
 multilinecommentleadingasteriskpresence
 Multimap
+multipleannotations
+multipleannotationsnojavadoc
 multiplestringliterals
 multipletags
 multiplevariabledeclarations

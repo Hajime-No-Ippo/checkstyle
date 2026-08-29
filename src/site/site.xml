@@ -218,12 +218,14 @@
           <item name="RegexpHeader" href="checks/header/regexpheader.html"/>
         </item>
         <item name="Imports" href="checks/imports/index.html" collapse="true">
+          <item name="AvoidModuleImport" href="checks/imports/avoidmoduleimport.html"/>
           <item name="AvoidStarImport" href="checks/imports/avoidstarimport.html"/>
           <item name="AvoidStaticImport" href="checks/imports/avoidstaticimport.html"/>
           <item name="CustomImportOrder" href="checks/imports/customimportorder.html"/>
           <item name="IllegalImport" href="checks/imports/illegalimport.html"/>
           <item name="ImportControl" href="checks/imports/importcontrol.html"/>
           <item name="ImportOrder" href="checks/imports/importorder.html"/>
+          <item name="ModuleImportOrder" href="checks/imports/moduleimportorder.html"/>
           <item name="RedundantImport" href="checks/imports/redundantimport.html"/>
           <item name="UnnecessaryFullyQualifiedType"
                 href="checks/imports/unnecessaryfullyqualifiedtype.html"/>
@@ -232,6 +234,8 @@
         <item name="Javadoc Comments" href="checks/javadoc/index.html" collapse="true">
           <item name="AtclauseOrder" href="checks/javadoc/atclauseorder.html"/>
           <item name="IllegalBlockTag" href="checks/javadoc/illegalblocktag.html"/>
+          <item name="InappropriateJavadocBlockTagsOnPackageCheck"
+                href="checks/javadoc/inappropriatejavadocblocktagsonpackage.html"/>
           <item name="InappropriateJavadocBlockTagsOnType"
                 href="checks/javadoc/inappropriatejavadocblocktagsontype.html"/>
           <item name="InvalidJavadocPosition" href="checks/javadoc/invalidjavadocposition.html"/>
@@ -320,6 +324,10 @@
                 href="checks/modifier/interfacememberimpliedmodifier.html"/>
           <item name="ModifierOrder" href="checks/modifier/modifierorder.html"/>
           <item name="RedundantModifier" href="checks/modifier/redundantmodifier.html"/>
+        </item>
+
+        <item name="Modules" href="checks/modules/index.html" collapse="true">
+          <item name="ModuleDirectiveOrder" href="checks/modules/moduledirectiveorder.html"/>
         </item>
 
         <item name="Naming Conventions" href="checks/naming/index.html" collapse="true">

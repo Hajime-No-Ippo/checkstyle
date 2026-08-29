@@ -432,6 +432,7 @@ public class PackageObjectFactory implements ModuleFactory {
         fillChecksFromJavadocPackage();
         fillChecksFromMetricsPackage();
         fillChecksFromModifierPackage();
+        fillChecksFromModulesPackage();
         fillChecksFromNamingPackage();
         fillChecksFromRegexpPackage();
         fillChecksFromSizesPackage();
@@ -668,6 +669,8 @@ public class PackageObjectFactory implements ModuleFactory {
      * Fill short-to-full module names map with Checks from imports package.
      */
     private static void fillChecksFromImportsPackage() {
+        NAME_TO_FULL_MODULE_NAME.put("AvoidModuleImportCheck",
+                BASE_PACKAGE + ".checks.imports.AvoidModuleImportCheck");
         NAME_TO_FULL_MODULE_NAME.put("AvoidStarImportCheck",
                 BASE_PACKAGE + ".checks.imports.AvoidStarImportCheck");
         NAME_TO_FULL_MODULE_NAME.put("AvoidStaticImportCheck",
@@ -680,6 +683,8 @@ public class PackageObjectFactory implements ModuleFactory {
                 BASE_PACKAGE + ".checks.imports.ImportControlCheck");
         NAME_TO_FULL_MODULE_NAME.put("ImportOrderCheck",
                 BASE_PACKAGE + ".checks.imports.ImportOrderCheck");
+        NAME_TO_FULL_MODULE_NAME.put("ModuleImportOrderCheck",
+                BASE_PACKAGE + ".checks.imports.ModuleImportOrderCheck");
         NAME_TO_FULL_MODULE_NAME.put("RedundantImportCheck",
                 BASE_PACKAGE + ".checks.imports.RedundantImportCheck");
         NAME_TO_FULL_MODULE_NAME.put("UnnecessaryFullyQualifiedTypeCheck",
@@ -706,6 +711,8 @@ public class PackageObjectFactory implements ModuleFactory {
                 BASE_PACKAGE + ".checks.javadoc.AtclauseOrderCheck");
         NAME_TO_FULL_MODULE_NAME.put("IllegalBlockTagCheck",
                 BASE_PACKAGE + ".checks.javadoc.IllegalBlockTagCheck");
+        NAME_TO_FULL_MODULE_NAME.put("InappropriateJavadocBlockTagsOnPackageCheck",
+                BASE_PACKAGE + ".checks.javadoc.InappropriateJavadocBlockTagsOnPackageCheck");
         NAME_TO_FULL_MODULE_NAME.put("InappropriateJavadocBlockTagsOnTypeCheck",
                 BASE_PACKAGE + ".checks.javadoc.InappropriateJavadocBlockTagsOnTypeCheck");
         NAME_TO_FULL_MODULE_NAME.put("InvalidJavadocPositionCheck",
@@ -800,6 +807,14 @@ public class PackageObjectFactory implements ModuleFactory {
                 BASE_PACKAGE + ".checks.modifier.ModifierOrderCheck");
         NAME_TO_FULL_MODULE_NAME.put("RedundantModifierCheck",
                 BASE_PACKAGE + ".checks.modifier.RedundantModifierCheck");
+    }
+
+    /**
+     * Fill short-to-full module names map with Checks from modules package.
+     */
+    private static void fillChecksFromModulesPackage() {
+        NAME_TO_FULL_MODULE_NAME.put("ModuleDirectiveOrderCheck",
+                BASE_PACKAGE + ".checks.modules.ModuleDirectiveOrderCheck");
     }
 
     /**

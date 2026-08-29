@@ -166,14 +166,10 @@ public class XdocsExamplesAstConsistencyTest {
      * Until: <a href="https://github.com/checkstyle/checkstyle/issues/21229">...</a>
      */
     private static final Set<String> EXAMPLE_COUNT_SUPPRESSED_MODULES = Set.of(
-            "checks/design/designforextension",
-            "checks/imports/avoidstarimport",
             "checks/javadoc/atclauseorder",
             "checks/javadoc/javadocblocktaglocation",
             "checks/javadoc/javadocpackage",
             "checks/lineending",
-            "checks/naming/patternvariablename",
-            "checks/newlineatendoffile",
             "checks/sizes/linelength",
             "checks/whitespace/emptylineseparator",
             "filters/suppresswarningsfilter"

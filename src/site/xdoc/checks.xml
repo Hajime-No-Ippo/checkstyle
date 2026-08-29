@@ -176,6 +176,16 @@
           </tr>
           <tr>
             <td>
+              <a href="checks/imports/avoidmoduleimport.html#AvoidModuleImport">
+                AvoidModuleImport
+              </a>
+            </td>
+            <td>
+              Checks that there are no module imports.
+            </td>
+          </tr>
+          <tr>
+            <td>
               <a href="checks/blocks/avoidnestedblocks.html#AvoidNestedBlocks">
                 AvoidNestedBlocks
               </a>
@@ -749,6 +759,17 @@
           </tr>
           <tr>
             <td>
+              <a href="checks/javadoc/inappropriatejavadocblocktagsonpackage.html#InappropriateJavadocBlockTagsOnPackage">
+                InappropriateJavadocBlockTagsOnPackage
+              </a>
+            </td>
+            <td>
+              Checks that Javadoc block tags for package definitions do not contain tags that are
+              semantically invalid for packages.
+            </td>
+          </tr>
+          <tr>
+            <td>
               <a href="checks/javadoc/inappropriatejavadocblocktagsontype.html#InappropriateJavadocBlockTagsOnType">
                 InappropriateJavadocBlockTagsOnType
               </a>
@@ -1307,6 +1328,26 @@
               Checks that the order of modifiers conforms to the suggestions in the <a href="https://docs.oracle.com/javase/specs/jls/se16/preview/specs/sealed-classes-jls.html">
               Java Language specification, &#167; 8.1.1, 8.3.1, 8.4.3</a> and <a href="https://docs.oracle.com/javase/specs/jls/se11/html/jls-9.html">
               9.4</a>.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="checks/modules/moduledirectiveorder.html#ModuleDirectiveOrder">
+                ModuleDirectiveOrder
+              </a>
+            </td>
+            <td>
+              Checks the ordering, grouping and separation of directives in a module declaration.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="checks/imports/moduleimportorder.html#ModuleImportOrder">
+                ModuleImportOrder
+              </a>
+            </td>
+            <td>
+              Checks the ordering and placement of module import declarations.
             </td>
           </tr>
           <tr>

@@ -713,6 +713,7 @@
     </module>
 
     <!-- Imports -->
+    <module name="AvoidModuleImport"/>
     <module name="AvoidStarImport"/>
     <module name="AvoidStaticImport"/>
     <module name="CustomImportOrder">
@@ -742,6 +743,7 @@
       <property name="option" value="top"/>
       <property name="sortStaticImportsAlphabetically" value="true"/>
     </module>
+    <module name="ModuleImportOrder"/>
     <module name="RedundantImport"/>
     <module name="UnnecessaryFullyQualifiedType"/>
     <module name="UnusedImports"/>
@@ -751,6 +753,7 @@
     <module name="IllegalBlockTag">
       <property name="tag" value="@author"/>
     </module>
+    <module name="InappropriateJavadocBlockTagsOnPackage"/>
     <module name="InappropriateJavadocBlockTagsOnType"/>
     <module name="InvalidJavadocPosition"/>
     <module name="JavadocBlockTagLocation">
@@ -896,6 +899,9 @@
       <property name="jdkVersion" value="${checkstyle.java.version}"/>
     </module>
     <module name="AnnotatedDeclarationVisibility"/>
+
+    <!-- Modules -->
+    <module name="ModuleDirectiveOrder"/>
 
     <!-- Naming Conventions -->
     <module name="AbbreviationAsWordInName">

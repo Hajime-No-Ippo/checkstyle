@@ -102,6 +102,12 @@
   <suppress id="presenceOfCompilationComment"
             files="beforeexecutionexclusionfilefilter/.*"/>
 
+  <!-- Module declarations compile only in files named 'module-info.java', but example
+       files must be named 'ExampleN.java'. These examples can never compile, so they
+       cannot carry a truthful 'Compilable with JavaN' comment. -->
+  <suppress id="presenceOfCompilationComment"
+            files="moduledirectiveorder/.*"/>
+
   <!-- Without showing symbol, user can get confused which one we are referring to -->
   <suppress id="discouragedRegexpInViolationMessage"
     files="operatorwrap/Example1.java"/>
@@ -121,7 +127,7 @@
 
   <!-- Suppress forbidden regex messages for avoidstarimport examples -->
   <suppress id="forbiddenRegexpInViolationMessage"
-    files="avoidstarimport/Example[1-6].java"/>
+    files="avoidstarimport/(Example|UseCase)[1-9].java"/>
 
   <suppress checks="CommentsIndentation"
     files="singlespaceseparator/Example[12].java"/>
@@ -166,7 +172,7 @@
 
   <!-- No new line by design to show violation -->
   <suppress checks="NewlineAtEndOfFile"
-    files="newlineatendoffile/Example\d+.*"/>
+    files="newlineatendoffile/(Example|UseCase)\d+.*"/>
 
   <!-- We need to maintain indentation on xml part -->
   <suppress checks="LineLength"
