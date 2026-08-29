@@ -2,14 +2,12 @@ name: Sync Upstream
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Daily at midnight
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout
@@ -22,14 +20,15 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
-          git remote add upstream https://github.com/checkstyle/checkstyle.git || true
+
+          git remote add upstream https://github.com/checkstyle/checkstyle.git
           git fetch upstream master
-          git merge upstream/master --allow-unrelated-histories -m "chore: sync upstream" || true
+
+          git merge upstream/master -m "chore: sync upstream"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.UPSTRE }}
           branch: master
           force: true
