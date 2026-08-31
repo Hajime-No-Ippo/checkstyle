@@ -437,6 +437,7 @@
     <module name="EqualsAvoidNull"/>
     <module name="EqualsHashCode"/>
     <module name="ExplicitInitialization"/>
+    <module name="ExpressionOverBlockLambda"/>
     <module name="FallThrough"/>
     <module name="FinalLocalVariable"/>
     <module name="HiddenField">
@@ -753,6 +754,7 @@
     <module name="IllegalBlockTag">
       <property name="tag" value="@author"/>
     </module>
+    <module name="InappropriateJavadocBlockTagsOnField"/>
     <module name="InappropriateJavadocBlockTagsOnPackage"/>
     <module name="InappropriateJavadocBlockTagsOnType"/>
     <module name="InvalidJavadocPosition"/>

@@ -415,6 +415,7 @@ executablestatementcount
 Exif
 explicitinitialization
 expr
+expressionoverblocklambda
 Externalizable
 fallsthrough
 fallthrough
@@ -620,6 +621,7 @@ importnolinewrap
 importorder
 importrule
 imprt
+inappropriatejavadocblocktagsonfield
 inappropriatejavadocblocktagsonpackage
 inappropriatejavadocblocktagsontype
 Incompatabilities

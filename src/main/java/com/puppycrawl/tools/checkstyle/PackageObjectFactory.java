@@ -515,6 +515,8 @@ public class PackageObjectFactory implements ModuleFactory {
                 BASE_PACKAGE + ".checks.coding.EqualsHashCodeCheck");
         NAME_TO_FULL_MODULE_NAME.put("ExplicitInitializationCheck",
                 BASE_PACKAGE + ".checks.coding.ExplicitInitializationCheck");
+        NAME_TO_FULL_MODULE_NAME.put("ExpressionOverBlockLambdaCheck",
+                BASE_PACKAGE + ".checks.coding.ExpressionOverBlockLambdaCheck");
         NAME_TO_FULL_MODULE_NAME.put("FallThroughCheck",
                 BASE_PACKAGE + ".checks.coding.FallThroughCheck");
         NAME_TO_FULL_MODULE_NAME.put("FinalLocalVariableCheck",
@@ -715,6 +717,8 @@ public class PackageObjectFactory implements ModuleFactory {
                 BASE_PACKAGE + ".checks.javadoc.InappropriateJavadocBlockTagsOnPackageCheck");
         NAME_TO_FULL_MODULE_NAME.put("InappropriateJavadocBlockTagsOnTypeCheck",
                 BASE_PACKAGE + ".checks.javadoc.InappropriateJavadocBlockTagsOnTypeCheck");
+        NAME_TO_FULL_MODULE_NAME.put("InappropriateJavadocBlockTagsOnFieldCheck",
+                BASE_PACKAGE + ".checks.javadoc.InappropriateJavadocBlockTagsOnFieldCheck");
         NAME_TO_FULL_MODULE_NAME.put("InvalidJavadocPositionCheck",
                 BASE_PACKAGE + ".checks.javadoc.InvalidJavadocPositionCheck");
         NAME_TO_FULL_MODULE_NAME.put("JavadocBlockTagLocationCheck",

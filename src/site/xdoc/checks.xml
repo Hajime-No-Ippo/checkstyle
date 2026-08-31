@@ -501,6 +501,17 @@
           </tr>
           <tr>
             <td>
+              <a href="checks/coding/expressionoverblocklambda.html#ExpressionOverBlockLambda">
+                ExpressionOverBlockLambda
+              </a>
+            </td>
+            <td>
+              Checks that expression lambdas are used instead of single-line block lambdas where
+              possible.
+            </td>
+          </tr>
+          <tr>
+            <td>
               <a href="checks/coding/fallthrough.html#FallThrough">
                 FallThrough
               </a>
@@ -755,6 +766,17 @@
             </td>
             <td>
               Checks the ordering/grouping of imports.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="checks/javadoc/inappropriatejavadocblocktagsonfield.html#InappropriateJavadocBlockTagsOnField">
+                InappropriateJavadocBlockTagsOnField
+              </a>
+            </td>
+            <td>
+              Checks that Javadoc block tags for field declarations do not contain tags that are
+              semantically invalid for fields.
             </td>
           </tr>
           <tr>
