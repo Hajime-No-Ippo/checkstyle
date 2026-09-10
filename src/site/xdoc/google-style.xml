@@ -652,14 +652,6 @@
                     ConstructorsDeclarationGrouping</a>
                   (<a href="https://github.com/search?q=path%3Asrc%2Fmain%2Fresources%20path%3A**%2Fgoogle_checks.xml+repo%3Acheckstyle%2Fcheckstyle+ConstructorsDeclarationGrouping">
                   config</a>)
-                  <br />
-                  <br />
-                  Missing samples for overloaded methods and constructors that differ in
-                  modifiers, such as <code>static</code> or <code>private</code>.
-                  Until:
-                  <a href="https://github.com/checkstyle/checkstyle/issues/21447">
-                    #21447
-                  </a>
                 </td>
                 <td>
                   <a href="https://github.com/checkstyle/checkstyle/tree/master/src/it/resources/com/google/checkstyle/test/chapter3filestructure/rule3421overloadsplit">
@@ -696,18 +688,17 @@
                 </td>
                 <td>
                   <span class="wrapper inline">
-                    <img
-                        src="images/ban_red.png"
-                        alt="" />
+                    <img src="images/ok_green.png" alt="" />
                   </span>
-                  Checkstyle currently does not have a Parser to support
-                  <code>module-info.java</code> file Grammar. For more information,
-                  see the discussion at:
-                  <a href="https://github.com/checkstyle/checkstyle/issues/17170#issuecomment-2944237497">
-                    #17170
-                  </a>
+                  <a href="checks/modules/moduledirectiveorder.html#ModuleDirectiveOrder">
+                    ModuleDirectiveOrder</a>
+                  (<a href="https://github.com/search?q=path%3Asrc%2Fmain%2Fresources%20path%3A**%2Fgoogle_checks.xml+repo%3Acheckstyle%2Fcheckstyle+ModuleDirectiveOrder">
+                  config</a>)
                 </td>
-                <td/>
+                <td>
+                  <a href="https://github.com/checkstyle/checkstyle/tree/master/src/it/resources/com/google/checkstyle/test/chapter3filestructure/rule35moduledeclaration">
+                    samples</a>
+                </td>
               </tr>
               <tr>
                 <td><a name="a4"/>
@@ -878,22 +869,12 @@
                 </td>
                 <td>
                   <span class="wrapper inline">
-                    <img src="images/ok_blue.png" alt="" />
+                    <img src="images/ok_green.png" alt="" />
                   </span>
                   <a href="checks/coding/onestatementperline.html#OneStatementPerLine">
                     OneStatementPerLine</a>
                   (<a href="https://github.com/search?q=path%3Asrc%2Fmain%2Fresources%20path%3A**%2Fgoogle_checks.xml+repo%3Acheckstyle%2Fcheckstyle+OneStatementPerLine">
                   config</a>)
-                  <br />
-                  <br />
-                  Not covered:
-                  <br />
-                  False negative for multiple resource declarations on the same line
-                  in a try-with-resources statement.
-                  Until:
-                  <a href="https://github.com/checkstyle/checkstyle/issues/21454">
-                    #21454
-                  </a>
                 </td>
                 <td>
                   <a href="https://github.com/checkstyle/checkstyle/tree/master/src/it/resources/com/google/checkstyle/test/chapter4formatting/rule43onestatement">
@@ -2359,13 +2340,6 @@
                   <a href="checks/blocks/emptycatchblock.html#EmptyCatchBlock">EmptyCatchBlock</a>
                   (<a href="https://github.com/search?q=path%3Asrc%2Fmain%2Fresources%20path%3A**%2Fgoogle_checks.xml+repo%3Acheckstyle%2Fcheckstyle+EmptyCatchBlock">
                   config</a>)
-                  <br />
-                  <br />
-                  Missing samples for empty catch block with unnamed parameter.
-                  Until:
-                  <a href="https://github.com/checkstyle/checkstyle/issues/21450">
-                    #21450
-                  </a>
                 </td>
                 <td>
                   <a href="https://github.com/checkstyle/checkstyle/tree/master/src/it/resources/com/google/checkstyle/test/chapter6programpractice/rule62donotignoreexceptions">
