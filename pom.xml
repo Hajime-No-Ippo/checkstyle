@@ -216,7 +216,7 @@
     <sevntu-checkstyle-check.checkstyle.version>
       10.4
     </sevntu-checkstyle-check.checkstyle.version>
-    <versions.plugin.version>2.21.0</versions.plugin.version>
+    <versions.plugin.version>2.22.0</versions.plugin.version>
     <compiler.plugin.version>3.16.0</compiler.plugin.version>
     <checkstyle.skipCompileInputResources>false</checkstyle.skipCompileInputResources>
     <checkstyle.openrewrite.version>1.0.0</checkstyle.openrewrite.version>
@@ -540,7 +540,7 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
-          <version>3.6.3</version>
+          <version>3.6.4</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -897,7 +897,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>tidy-maven-plugin</artifactId>
-        <version>1.4.0</version>
+        <version>1.4.1</version>
         <executions>
           <execution>
             <id>validate</id>
@@ -1690,7 +1690,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>build-helper-maven-plugin</artifactId>
-        <version>3.6.1</version>
+        <version>3.6.2</version>
         <executions>
           <execution>
             <id>add-source</id>
@@ -1946,7 +1946,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>xml-maven-plugin</artifactId>
-        <version>1.2.1</version>
+        <version>1.2.2</version>
         <executions>
           <execution>
             <goals>
@@ -2239,7 +2239,7 @@
       <plugin>
         <groupId>io.fluxzero</groupId>
         <artifactId>lychee-maven-plugin</artifactId>
-        <version>0.2.15</version>
+        <version>0.2.18</version>
         <executions>
           <execution>
             <id>lychee-check</id>
@@ -2341,13 +2341,13 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>jdepend-maven-plugin</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.1</version>
       </plugin>
 
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>taglist-maven-plugin</artifactId>
-        <version>3.2.2</version>
+        <version>3.2.3</version>
         <configuration>
           <excludes>**/*/checks/TodoCommentCheck.java</excludes>
           <tagListOptions>
