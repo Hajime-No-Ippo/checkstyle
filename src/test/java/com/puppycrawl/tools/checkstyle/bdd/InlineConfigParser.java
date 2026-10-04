@@ -270,7 +270,6 @@ public final class InlineConfigParser {
             "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck",
             "com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck",
             "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck",
-            "com.puppycrawl.tools.checkstyle.checks.coding.FallThroughCheck",
             "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
             "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck",
             "com.puppycrawl.tools.checkstyle.checks.coding.ModifiedControlVariableCheck",
@@ -836,16 +835,16 @@ public final class InlineConfigParser {
         if (value == null) {
             defaultValueAsString = NULL_STRING;
         }
-        else if (value instanceof String strValue) {
+        else if (value instanceof final String strValue) {
             defaultValueAsString = toStringForStringValue(strValue);
         }
         else if (value.getClass().isArray()) {
             defaultValueAsString = toStringConvertForArrayValue(value);
         }
-        else if (value instanceof BitSet set) {
+        else if (value instanceof final BitSet set) {
             defaultValueAsString = toStringForBitSetValue(set);
         }
-        else if (value instanceof Collection<?> values) {
+        else if (value instanceof final Collection<?> values) {
             defaultValueAsString = toStringForCollectionValue(values);
         }
         else {
