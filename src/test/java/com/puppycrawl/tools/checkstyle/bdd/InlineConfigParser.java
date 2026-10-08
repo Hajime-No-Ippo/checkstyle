@@ -268,7 +268,6 @@ public final class InlineConfigParser {
      */
     private static final Set<String> SUPPRESSED_CHECKS = Set.of(
             "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck",
-            "com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck",
             "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck",
             "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
             "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck",
@@ -276,7 +275,6 @@ public final class InlineConfigParser {
             "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck",
             "com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck",
             "com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck",
-            "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck",
             "com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck",
             "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
             "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck",
@@ -391,6 +389,8 @@ public final class InlineConfigParser {
                 "com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck");
         MODULE_MAPPINGS.put("EmptyLineSeparator",
                 "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck");
+        MODULE_MAPPINGS.put("EmptyLineWrappingInBlock",
+                "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineWrappingInBlockCheck");
         MODULE_MAPPINGS.put("LocalVariableName",
                 "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck");
         MODULE_MAPPINGS.put("ModifierOrder",
