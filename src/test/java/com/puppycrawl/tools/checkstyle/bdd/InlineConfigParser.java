@@ -268,8 +268,6 @@ public final class InlineConfigParser {
      */
     private static final Set<String> SUPPRESSED_CHECKS = Set.of(
             "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck",
-            "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck",
-            "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
             "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck",
             "com.puppycrawl.tools.checkstyle.checks.coding.ModifiedControlVariableCheck",
             "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck",
@@ -278,14 +276,10 @@ public final class InlineConfigParser {
             "com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck",
             "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
             "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck",
-            "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck",
             "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck",
-            "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck",
             "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck",
-            "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck",
             "com.puppycrawl.tools.checkstyle.checks.whitespace.GenericWhitespaceCheck",
-            "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck",
-            "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+            "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
     );
 
     /**
