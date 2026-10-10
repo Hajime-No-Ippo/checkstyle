@@ -103,16 +103,6 @@
 
   <!-- until https://github.com/checkstyle/checkstyle/issues/19803 -->
   <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsCompact2\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsCompact3\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsCompact5\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsCompact6\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsCompact7\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
             files="/checks/annotation/suppresswarnings/InputSuppressWarningsCompactNonConstant1\.java"/>
   <suppress id="violationBetweenAnnotationAndMethod"
             files="/checks/annotation/suppresswarnings/InputSuppressWarningsCompactNonConstant2\.java"/>
@@ -122,18 +112,6 @@
             files="/checks/annotation/suppresswarnings/InputSuppressWarningsCompactNonConstant5\.java"/>
   <suppress id="violationBetweenAnnotationAndMethod"
             files="/checks/annotation/suppresswarnings/InputSuppressWarningsCompactNonConstant6\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsExpanded1\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsExpanded2\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsExpanded3\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsExpanded5\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsExpanded6\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsExpanded7\.java"/>
   <suppress id="violationBetweenAnnotationAndMethod"
             files="/checks/annotation/suppresswarnings/InputSuppressWarningsExpandedNonConstant1\.java"/>
   <suppress id="violationBetweenAnnotationAndMethod"
