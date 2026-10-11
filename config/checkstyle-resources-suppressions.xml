@@ -118,6 +118,8 @@
   <suppress id="noTrailingWhitespace"
     files="/InputJavadocContentLocationTrailingSpace\.java"/>
   <suppress id="noTrailingWhitespace"
+    files="/InputJavadocUtilizingTrailingSpaceIgnoreTooShortPatternSpaces\.java"/>
+  <suppress id="noTrailingWhitespace"
     files="/InputJavadocParagraphCorrect\.java"/>
   <suppress id="noTrailingWhitespace"
     files="/InputJavadocTagContinuationIndentationGuavaFalsePositive\.java"/>
@@ -291,7 +293,11 @@
   <suppress checks="FileLength"
     files="/test/resources/com/puppycrawl/tools/checkstyle/checks/javadoc/javadocmethod/InputJavadocMethodTags1Three\.java"/>
   <suppress checks="FileLength"
+    files="/test/resources/com/puppycrawl/tools/checkstyle/checks/whitespace/genericwhitespace/InputGenericWhitespaceDefault\.java"/>
+  <suppress checks="FileLength"
     files="/test/resources/com/puppycrawl/tools/checkstyle/checks/coding/requirethis/InputRequireThisTryWithResourcesOnlyOverlappingFalse\.java"/>
+  <suppress checks="FileLength"
+    files="/test/resources/com/puppycrawl/tools/checkstyle/checks/coding/unnecessaryparentheses/InputUnnecessaryParenthesesOperatorsAndCasts\.java"/>
   <suppress checks="FileLength"
     files="/test/resources/com/puppycrawl/tools/checkstyle/checks/regexp/regexpsinglelinejava/InputRegexpSinglelineJavaSemantic7\.java"/>
   <suppress checks="FileLength"

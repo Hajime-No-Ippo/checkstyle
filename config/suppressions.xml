@@ -136,6 +136,7 @@
   <suppress id="noConsecutiveLines" files="/parenpad.xml"/>
   <suppress id="noConsecutiveLines" files="/singlespaceseparator.xml"/>
   <suppress id="noConsecutiveLines" files="/typebodypadding.xml"/>
+  <suppress id="noConsecutiveLines" files="/unnecessaryparentheses.xml"/>
 
   <!-- permanent suppression to allow regexp on content of the line -->
   <suppress id="noUsageOfGetFileContentsMethod" files="RegexpCheck.java"/>
@@ -199,8 +200,6 @@
   <suppress checks="MissingCtor" files=".*/src/(test|it|xdocs-examples)/.*\.java"/>
 
   <!-- suppress until https://github.com/checkstyle/checkstyle/issues/21861 -->
-  <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]XpathRegressionArrayTypeStyleTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]XpathRegressionAvoidEscapedUnicodeCharactersTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
