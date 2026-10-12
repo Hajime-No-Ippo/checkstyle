@@ -102,20 +102,6 @@
 
 
   <!-- until https://github.com/checkstyle/checkstyle/issues/19803 -->
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsExpandedNonConstant1\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsExpandedNonConstant2\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsExpandedNonConstant3\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsExpandedNonConstant4\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsExpandedNonConstant5\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsExpandedNonConstant6\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/annotation/suppresswarnings/InputSuppressWarningsExpandedNonConstant7\.java"/>
   <suppress id="violationBetweenJavadocAndMethod"
             files="/checks/coding/onestatementperline/InputOneStatementPerLineSingleLineSmallTalkStyle\.java"/>
   <suppress id="violationBetweenAnnotationAndMethod"
@@ -156,10 +142,6 @@
             files="/checks/trailingcomment/InputTrailingComment2\.java"/>
   <suppress id="violationBetweenAnnotationAndMethod"
             files="/checks/whitespace/emptylineseparator/InputEmptyLineSeparatorWithJavadoc2\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/whitespace/whitespaceafter/InputWhitespaceAfterAnnotation2\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="/checks/whitespace/whitespaceafter/example1/package-info\.java"/>
   <suppress id="violationBetweenJavadocAndMethod"
             files="/it/resources/com/google/checkstyle/test/chapter4formatting/rule412nonemptyblocks/InputFormattedNonemptyBlocksLeftRightCurly\.java"/>
   <suppress id="violationBetweenJavadocAndMethod"
