@@ -577,6 +577,8 @@ public class PackageObjectFactory implements ModuleFactory {
                 BASE_PACKAGE + ".checks.coding.PatternVariableAssignmentCheck");
         NAME_TO_FULL_MODULE_NAME.put("ParameterAssignmentCheck",
                 BASE_PACKAGE + ".checks.coding.ParameterAssignmentCheck");
+        NAME_TO_FULL_MODULE_NAME.put("RedundantThisCheck",
+                BASE_PACKAGE + ".checks.coding.RedundantThisCheck");
         NAME_TO_FULL_MODULE_NAME.put("RequireThisCheck",
                 BASE_PACKAGE + ".checks.coding.RequireThisCheck");
         NAME_TO_FULL_MODULE_NAME.put("ReturnCountCheck",
@@ -631,6 +633,8 @@ public class PackageObjectFactory implements ModuleFactory {
                 BASE_PACKAGE + ".checks.coding.UnusedTryResourceShouldBeUnnamedCheck");
         NAME_TO_FULL_MODULE_NAME.put("UnnecessaryTypeArgumentsWithRecordPatternCheck",
                 BASE_PACKAGE + ".checks.coding.UnnecessaryTypeArgumentsWithRecordPatternCheck");
+        NAME_TO_FULL_MODULE_NAME.put("ExceptionThrowShouldUseContextCheck",
+                BASE_PACKAGE + ".checks.coding.ExceptionThrowShouldUseContextCheck");
     }
 
     /**

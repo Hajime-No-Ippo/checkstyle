@@ -446,6 +446,7 @@
     <module name="EmptyStatement"/>
     <module name="EqualsAvoidNull"/>
     <module name="EqualsHashCode"/>
+    <module name="ExceptionThrowShouldUseContext"/>
     <module name="ExplicitInitialization"/>
     <module name="ExpressionOverBlockLambda"/>
     <module name="FallThrough"/>
@@ -613,6 +614,10 @@
     <module name="PackageDeclaration"/>
     <module name="ParameterAssignment"/>
     <module name="PatternVariableAssignment"/>
+    <module name="RedundantThis">
+      <!-- This check might conflict with RequireThis -->
+      <property name="severity" value="ignore"/>
+    </module>
     <module name="RequireThis"/>
     <module name="ReturnCount">
       <property name="max" value="1"/>
