@@ -216,7 +216,7 @@
     <sevntu-checkstyle-check.checkstyle.version>
       14.0.0
     </sevntu-checkstyle-check.checkstyle.version>
-    <versions.plugin.version>2.22.0</versions.plugin.version>
+    <versions.plugin.version>2.23.0</versions.plugin.version>
     <compiler.plugin.version>3.16.0</compiler.plugin.version>
     <checkstyle.skipCompileInputResources>false</checkstyle.skipCompileInputResources>
     <checkstyle.openrewrite.version>1.0.0</checkstyle.openrewrite.version>
@@ -622,7 +622,7 @@
         <plugin>
           <groupId>com.diffplug.spotless</groupId>
           <artifactId>spotless-maven-plugin</artifactId>
-          <version>3.10.3</version>
+          <version>3.10.4</version>
           <configuration>
             <java>
               <includes>
@@ -2654,9 +2654,19 @@
                              so it must not carry any module descriptor (ours or a dependency's). -->
                         <exclude>module-info.class</exclude>
                         <exclude>META-INF/versions/*/module-info.class</exclude>
+                        <!-- Exclude overlapping META-INF files to avoid shade warnings -->
+                        <exclude>META-INF/LICENSE</exclude>
+                        <exclude>META-INF/LICENSE.txt</exclude>
+                        <exclude>META-INF/NOTICE.txt</exclude>
+                        <exclude>META-INF/MANIFEST.MF</exclude>
                       </excludes>
                     </filter>
                   </filters>
+                  <artifactSet>
+                    <excludes>
+                      <exclude>com.google.guava:failureaccess</exclude>
+                    </excludes>
+                  </artifactSet>
                   <createDependencyReducedPom>false</createDependencyReducedPom>
                   <shadedArtifactAttached>true</shadedArtifactAttached>
                   <shadedClassifierName>all</shadedClassifierName>
