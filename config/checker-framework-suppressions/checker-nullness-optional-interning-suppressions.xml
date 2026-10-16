@@ -2778,27 +2778,6 @@
 
   <checkerFrameworkError unstable="false">
     <fileName>src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/MultipleStringLiteralsCheck.java</fileName>
-    <specifier>flowexpr.parse.index.too.big</specifier>
-    <message>the method has no parameter #1 (total 0 parameters)</message>
-    <lineContent>ignoreOccurrenceContext.clear();</lineContent>
-  </checkerFrameworkError>
-
-  <checkerFrameworkError unstable="false">
-    <fileName>src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/MultipleStringLiteralsCheck.java</fileName>
-    <specifier>flowexpr.parse.index.too.big</specifier>
-    <message>the method has no parameter #1 (total 0 parameters)</message>
-    <lineContent>ignoreOccurrenceContext.clear();</lineContent>
-  </checkerFrameworkError>
-
-  <checkerFrameworkError unstable="false">
-    <fileName>src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/MultipleStringLiteralsCheck.java</fileName>
-    <specifier>flowexpr.parse.index.too.big</specifier>
-    <message>the method has no parameter #1 (total 0 parameters)</message>
-    <lineContent>ignoreOccurrenceContext.clear();</lineContent>
-  </checkerFrameworkError>
-
-  <checkerFrameworkError unstable="false">
-    <fileName>src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/MultipleStringLiteralsCheck.java</fileName>
     <specifier>initialization.fields.uninitialized</specifier>
     <message>the constructor does not initialize fields: ignoreStringsRegexp</message>
     <lineContent>public MultipleStringLiteralsCheck() {</lineContent>
@@ -7300,6 +7279,39 @@
     <details>
       type of expression: @Initialized @Nullable DetailAST
       method return type: @Initialized @NonNull DetailAST
+    </details>
+  </checkerFrameworkError>
+
+  <checkerFrameworkError unstable="false">
+    <fileName>src/main/java/com/puppycrawl/tools/checkstyle/checks/whitespace/OpenjdkMethodParameterAlignmentCheck.java</fileName>
+    <specifier>argument</specifier>
+    <message>incompatible argument for parameter ast of AbstractCheck.log.</message>
+    <lineContent>log(name, MSG_KEY);</lineContent>
+    <details>
+      found   : @Initialized @Nullable DetailAST
+      required: @Initialized @NonNull DetailAST
+    </details>
+  </checkerFrameworkError>
+
+  <checkerFrameworkError unstable="false">
+    <fileName>src/main/java/com/puppycrawl/tools/checkstyle/checks/whitespace/OpenjdkMethodParameterAlignmentCheck.java</fileName>
+    <specifier>argument</specifier>
+    <message>incompatible argument for parameter ast of AbstractCheck.log.</message>
+    <lineContent>log(name, MSG_WRAP);</lineContent>
+    <details>
+      found   : @Initialized @Nullable DetailAST
+      required: @Initialized @NonNull DetailAST
+    </details>
+  </checkerFrameworkError>
+
+  <checkerFrameworkError unstable="false">
+    <fileName>src/main/java/com/puppycrawl/tools/checkstyle/checks/whitespace/OpenjdkMethodParameterAlignmentCheck.java</fileName>
+    <specifier>argument</specifier>
+    <message>incompatible argument for parameter parameters of OpenjdkMethodParameterAlignmentCheck.getParameters.</message>
+    <lineContent>getParameters(ast.findFirstToken(TokenTypes.PARAMETERS));</lineContent>
+    <details>
+      found   : @Initialized @Nullable DetailAST
+      required: @Initialized @NonNull DetailAST
     </details>
   </checkerFrameworkError>
 
