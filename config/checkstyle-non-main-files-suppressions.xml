@@ -290,6 +290,8 @@
   <suppress id="propertiesMacroMustExist"
          files="src/site/xdoc/checks/coding/noarraytrailingcomma.xml.template"/>
   <suppress id="propertiesMacroMustExist"
+         files="src/site/xdoc/checks/coding/nocausegetmessageinexceptionconstructor.xml.template"/>
+  <suppress id="propertiesMacroMustExist"
          files="src/site/xdoc/checks/coding/noclone.xml.template"/>
   <suppress id="propertiesMacroMustExist"
          files="src/site/xdoc/checks/coding/noenumtrailingcomma.xml.template"/>
@@ -333,6 +335,8 @@
          files="src/site/xdoc/checks/imports/redundantimport.xml.template"/>
   <suppress id="propertiesMacroMustExist"
          files="src/site/xdoc/checks/misc/openjdkmethodthrowsalignment.xml.template"/>
+  <suppress id="propertiesMacroMustExist"
+         files="src/site/xdoc/checks/misc/classheaderwrapopenjdk.xml.template"/>
   <suppress id="propertiesMacroMustExist"
          files="src[\\/]site[\\/]xdoc[\\/]checks[\\/]imports[\\/]unnecessaryfullyqualifiedtype.xml.template"/>
   <suppress id="propertiesMacroMustExist"

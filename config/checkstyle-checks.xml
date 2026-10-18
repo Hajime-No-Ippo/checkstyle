@@ -593,6 +593,7 @@
       <!-- This Check is conflicting with ArrayTrailingComma -->
       <property name="severity" value="ignore"/>
     </module>
+    <module name="NoCauseGetMessageInExceptionConstructor"/>
     <module name="NoClone"/>
     <module name="NoCodeInFile"/>
     <module name="NoEnumTrailingComma">
@@ -875,6 +876,7 @@
     <module name="AvoidEscapedUnicodeCharacters">
       <property name="allowIfAllCharactersEscaped" value="true"/>
     </module>
+    <module name="ClassHeaderWrapOpenjdk"/>
     <module name="CommentsIndentation"/>
     <module name="DescendantToken"/>
     <module name="FinalParameters">
