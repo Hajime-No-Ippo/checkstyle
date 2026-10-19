@@ -203,8 +203,6 @@
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]XpathRegressionDescendantTokenTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]XpathRegressionMultilineCommentLeadingAsteriskPresenceTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]annotation[\\/]XpathRegressionAnnotationLocationTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]annotation[\\/]XpathRegressionAnnotationUseStyleTest\.java"/>
@@ -233,8 +231,6 @@
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionArrayTrailingCommaTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionAvoidNoArgumentSuperConstructorCallTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionConstructorsDeclarationGroupingTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionDeclarationOrderTest\.java"/>
@@ -252,8 +248,6 @@
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionIllegalInstantiationTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionIllegalSymbolTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionIllegalTokenTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionIllegalTokenTextTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
@@ -333,8 +327,6 @@
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]design[\\/]XpathRegressionDesignForExtensionTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]design[\\/]XpathRegressionFinalClassTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]design[\\/]XpathRegressionHideUtilityClassConstructorTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]design[\\/]XpathRegressionInnerTypeLastTest\.java"/>
@@ -343,8 +335,6 @@
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]design[\\/]XpathRegressionMutableExceptionTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]design[\\/]XpathRegressionOneTopLevelClassTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]design[\\/]XpathRegressionSealedShouldHavePermitsListTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]design[\\/]XpathRegressionThrowsCountTest\.java"/>
@@ -352,8 +342,6 @@
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]design[\\/]XpathRegressionVisibilityModifierTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]imports[\\/]XpathRegressionAvoidModuleImportTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]imports[\\/]XpathRegressionAvoidStarImportTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]imports[\\/]XpathRegressionAvoidStaticImportTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
