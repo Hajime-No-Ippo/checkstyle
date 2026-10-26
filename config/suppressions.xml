@@ -207,13 +207,9 @@
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]annotation[\\/]XpathRegressionMissingOverrideTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]annotation[\\/]XpathRegressionSuppressWarningsTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionConstructorsDeclarationGroupingTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionDeclarationOrderTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionEqualsAvoidNullTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionExpressionOverBlockLambdaTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
@@ -233,25 +229,15 @@
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionMatchXpathTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionMissingNullCaseInSwitchTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionModifiedControlVariableTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionMultipleStringLiteralsTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionNestedTryDepthTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionOneStatementPerLineTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionOverloadMethodsDeclarationOrderTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionPatternVariableAssignmentTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionRequireThisTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionReturnCountTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionUnnecessaryNullCheckWithInstanceOfTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionUnnecessaryParenthesesTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
@@ -260,8 +246,6 @@
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionUnnecessarySemicolonAfterTypeMemberDeclarationTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionUnnecessarySemicolonInTryWithResourcesTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionUnnecessaryTypeArgumentsWithRecordPatternTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]coding[\\/]XpathRegressionUnusedLocalVariableTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
@@ -281,8 +265,6 @@
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]design[\\/]XpathRegressionMutableExceptionTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]design[\\/]XpathRegressionSealedShouldHavePermitsListTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]design[\\/]XpathRegressionThrowsCountTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]design[\\/]XpathRegressionVisibilityModifierTest\.java"/>
@@ -300,8 +282,6 @@
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]imports[\\/]XpathRegressionImportOrderTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]imports[\\/]XpathRegressionModuleImportOrderTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]imports[\\/]XpathRegressionRedundantImportTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]imports[\\/]XpathRegressionUnnecessaryFullyQualifiedTypeTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
@@ -365,8 +345,6 @@
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]naming[\\/]XpathRegressionCatchParameterNameTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]naming[\\/]XpathRegressionClassTypeParameterNameTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]naming[\\/]XpathRegressionConstantNameTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]naming[\\/]XpathRegressionGoogleMethodNameTest\.java"/>
@@ -374,8 +352,6 @@
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]naming[\\/]XpathRegressionGoogleNonConstantFieldNameTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]naming[\\/]XpathRegressionIllegalIdentifierNameTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]naming[\\/]XpathRegressionInterfaceTypeParameterNameTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]naming[\\/]XpathRegressionLambdaParameterNameTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
@@ -387,8 +363,6 @@
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]naming[\\/]XpathRegressionMethodNameTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]naming[\\/]XpathRegressionMethodTypeParameterNameTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]naming[\\/]XpathRegressionPackageNameTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]naming[\\/]XpathRegressionParameterNameTest\.java"/>
@@ -397,21 +371,13 @@
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]naming[\\/]XpathRegressionRecordComponentNameTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]naming[\\/]XpathRegressionRecordTypeParameterNameTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]naming[\\/]XpathRegressionStaticVariableNameTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]naming[\\/]XpathRegressionTypeNameTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]whitespace[\\/]XpathRegressionEmptyLineSeparatorTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]whitespace[\\/]XpathRegressionGenericWhitespaceTest\.java"/>
   <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]whitespace[\\/]XpathRegressionOperatorWrapTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
             files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]whitespace[\\/]XpathRegressionParenPadTest\.java"/>
-  <suppress id="xpathTestsUseInlineConfigParser"
-            files="[\\/]src[\\/]it[\\/]java[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]whitespace[\\/]XpathRegressionSeparatorWrapTest\.java"/>
 
 </suppressions>
 
