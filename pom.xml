@@ -12,7 +12,7 @@
 
   <groupId>com.puppycrawl.tools</groupId>
   <artifactId>checkstyle</artifactId>
-  <version>14.4.1-SNAPSHOT</version>
+  <version>14.5.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>checkstyle</name>
@@ -198,7 +198,7 @@
   </issueManagement>
 
   <properties>
-    <project.build.outputTimestamp>${maven.build.timestamp}</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2026-11-06T05:26:46Z</project.build.outputTimestamp>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <surefire.options />
     <projectVersion>${project.version}</projectVersion>
@@ -235,7 +235,7 @@
     <forbiddenapis.version>3.11</forbiddenapis.version>
     <json-schema-validator.version>1.2.0</json-schema-validator.version>
     <checkerframework.version>4.3.1</checkerframework.version>
-    <error-prone.version>2.51.0</error-prone.version>
+    <error-prone.version>2.52.0</error-prone.version>
     <error-prone-support.version>0.30.0</error-prone-support.version>
     <error-prone.configuration-args>
       -Xep:AmbiguousJsonCreator:ERROR
@@ -378,7 +378,7 @@
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>33.7.2-jre</version>
+      <version>33.8.0-jre</version>
       <exclusions>
         <exclusion>
           <groupId>org.checkerframework</groupId>
@@ -623,7 +623,7 @@
         <plugin>
           <groupId>com.diffplug.spotless</groupId>
           <artifactId>spotless-maven-plugin</artifactId>
-          <version>3.10.4</version>
+          <version>3.11.0</version>
           <configuration>
             <java>
               <includes>
@@ -5282,6 +5282,7 @@
                 <param>com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheckTest</param>
                 <param>com.puppycrawl.tools.checkstyle.filters.SuppressWithPlainTextCommentFilterTest</param>
                 <param>com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheckTest</param>
+                <param>com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheckTest</param>
                 <param>com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheckTest</param>
                 <param>com.puppycrawl.tools.checkstyle.checks.modifier.InterfaceMemberImpliedModifierCheckTest</param>
               </targetTests>
@@ -5292,6 +5293,8 @@
                 <param>*.Input*</param>
               </excludedTestClasses>
               <excludedMethods>
+                <!-- Defensive copying: https://github.com/hcoles/pitest/issues/1462 -->
+                <param>copyOfArray</param>
                 <!-- destroy method was added in case module had to free up resources
                 before ending, but currently it does ThreadLocal cleanup,
                 to satisfy sonar violation. But right now checkstyle is not multi threading tool.
