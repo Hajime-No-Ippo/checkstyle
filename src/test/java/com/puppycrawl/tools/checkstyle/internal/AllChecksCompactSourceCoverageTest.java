@@ -86,7 +86,6 @@ public class AllChecksCompactSourceCoverageTest {
      */
     private static final Set<String> SUPPRESSED_CHECKS = Set.of(
         "AbbreviationAsWordInNameCheck",
-        "AbstractClassNameCheck",
         "AnnotationLocationCheck",
         "AnnotationUseStyleCheck",
         "AtclauseOrderCheck",
@@ -95,7 +94,6 @@ public class AllChecksCompactSourceCoverageTest {
         "CommentsIndentationCheck",
         "ConstructorsDeclarationGroupingCheck",
         "CustomImportOrderCheck",
-        "ExplicitInitializationCheck",
         "IllegalBlockTagCheck",
         "IllegalIdentifierNameCheck",
         "IllegalImportCheck",
@@ -109,7 +107,6 @@ public class AllChecksCompactSourceCoverageTest {
         "IndentationCheck",
         "InterfaceIsTypeCheck",
         "InterfaceMemberImpliedModifierCheck",
-        "InterfaceTypeParameterNameCheck",
         "InvalidJavadocPositionCheck",
         "JavaNCSSCheck",
         "JavadocContentLocationCheck",
@@ -127,7 +124,6 @@ public class AllChecksCompactSourceCoverageTest {
         "LambdaBodyLengthCheck",
         "LambdaParameterNameCheck",
         "MatchXpathCheck",
-        "MethodTypeParameterNameCheck",
         "MissingDeprecatedCheck",
         "MissingJavadocMethodCheck",
         "MissingJavadocPackageCheck",
@@ -146,8 +142,6 @@ public class AllChecksCompactSourceCoverageTest {
         "PackageDeclarationCheck",
         "PackageNameCheck",
         "PatternVariableAssignmentCheck",
-        "PatternVariableNameCheck",
-        "RecordComponentNameCheck",
         "RecordComponentNumberCheck",
         "RecordTypeParameterNameCheck",
         "RedundantModifierCheck",
@@ -172,7 +166,6 @@ public class AllChecksCompactSourceCoverageTest {
         "UnusedTryResourceShouldBeUnnamedCheck",
         "UnnecessaryFullyQualifiedTypeCheck",
         "UseEnhancedSwitchCheck",
-        "VariableDeclarationUsageDistanceCheck",
         "WhenShouldBeUsedCheck",
         "WhitespaceAfterCheck"
     );
