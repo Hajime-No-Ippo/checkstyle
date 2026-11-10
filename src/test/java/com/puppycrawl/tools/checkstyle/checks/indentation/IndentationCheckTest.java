@@ -3088,6 +3088,21 @@ public class IndentationCheckTest extends AbstractModuleTestSupport {
     }
 
     @Test
+    public void testAnonymousClassArgumentOfWrappedCall() throws Exception {
+        final DefaultConfiguration checkConfig = createModuleConfig(IndentationCheck.class);
+        checkConfig.addProperty("tabWidth", "8");
+        checkConfig.addProperty("basicOffset", "2");
+        checkConfig.addProperty("braceAdjustment", "0");
+        checkConfig.addProperty("caseIndent", "2");
+        checkConfig.addProperty("lineWrappingIndentation", "4");
+        checkConfig.addProperty("throwsIndent", "4");
+        checkConfig.addProperty("arrayInitIndent", "2");
+        final String[] expected = CommonUtil.EMPTY_STRING_ARRAY;
+        verifyWarns(checkConfig, getPath("InputIndentationAnonymousClassArgument.java"),
+                expected);
+    }
+
+    @Test
     public void testAnonymousClassInMethodWithCurlyOnNewLine() throws Exception {
         final DefaultConfiguration checkConfig = createModuleConfig(IndentationCheck.class);
         checkConfig.addProperty("tabWidth", "4");
@@ -4907,6 +4922,31 @@ public class IndentationCheckTest extends AbstractModuleTestSupport {
             "91:5: " + getCheckMessage(MSG_CHILD_ERROR, "method call", 4, 6),
         };
         verifyWarns(checkConfig, fileName, expected);
+    }
+
+    @Test
+    public void testIndentationCompactSourceFileDefault() throws Exception {
+        final String[] expected = {
+            "16:3: " + getCheckMessage(MSG_ERROR, "member def type", 2, 0),
+            "27:3: " + getCheckMessage(MSG_ERROR, "method def modifier", 2, 0),
+            "28:7: " + getCheckMessage(MSG_CHILD_ERROR, "method def", 6, 4),
+        };
+        verifyWithInlineConfigParser(
+                getNonCompilablePath(
+                        "compact/InputIndentationCompactSourceFileDefault.java"),
+                expected);
+    }
+
+    @Test
+    public void testIndentationCompactSourceFileProperties() throws Exception {
+        final String[] expected = {
+            "21:3: " + getCheckMessage(MSG_ERROR, "if lcurly", 2, 4),
+            "23:3: " + getCheckMessage(MSG_ERROR, "if rcurly", 2, 4),
+        };
+        verifyWithInlineConfigParser(
+                getNonCompilablePath(
+                        "compact/InputIndentationCompactSourceFileProperties.java"),
+                expected);
     }
 
     private static final class IndentAudit implements AuditListener {
