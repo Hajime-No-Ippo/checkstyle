@@ -85,29 +85,8 @@ public class AllChecksCompactSourceCoverageTest {
      * be removed.
      */
     private static final Set<String> SUPPRESSED_CHECKS = Set.of(
-        "AtclauseOrderCheck",
         "CustomImportOrderCheck",
-        "ImportOrderCheck",
-        "InvalidJavadocPositionCheck",
-        "JavadocLeadingAsteriskAlignCheck",
-        "JavadocLinkFirstOccurrenceCheck",
-        "JavadocMethodCheck",
-        "JavadocMissingWhitespaceAfterAsteriskCheck",
-        "JavadocSeeTagOrderCheck",
-        "JavadocStyleCheck",
-        "JavadocTagContinuationIndentationCheck",
-        "LambdaParameterNameCheck",
-        "MissingDeprecatedCheck",
-        "MissingJavadocPackageCheck",
-        "ModifiedControlVariableCheck",
-        "NonEmptyAtclauseDescriptionCheck",
-        "PackageAnnotationCheck",
-        "PackageNameCheck",
-        "RedundantModifierCheck",
-        "RegexpSinglelineJavaCheck",
-        "RequireThisCheck",
-        "TextBlockGoogleStyleFormattingCheck",
-        "UnnecessarySemicolonInTryWithResourcesCheck"
+        "ImportOrderCheck"
     );
 
     @Test
@@ -124,6 +103,28 @@ public class AllChecksCompactSourceCoverageTest {
             assertWithMessage("The following checks lack compact source input coverage:\n"
                     + String.join("\n", failures)).fail();
         }
+    }
+
+    @Test
+    public void testSuppressedChecksAreNotOutdated() throws Exception {
+        final Set<String> checkNames = CheckUtil.getCheckstyleChecks().stream()
+                .map(Class::getSimpleName)
+                .collect(Collectors.toUnmodifiableSet());
+
+        final Set<String> outdatedSuppressions = SUPPRESSED_CHECKS.stream()
+                .filter(check -> !checkNames.contains(check))
+                .collect(Collectors.toCollection(TreeSet::new));
+
+        for (Class<?> check : CheckUtil.getCheckstyleChecks()) {
+            if (SUPPRESSED_CHECKS.contains(check.getSimpleName())
+                    && findCoverageFailures(check).isEmpty()) {
+                outdatedSuppressions.add(check.getSimpleName());
+            }
+        }
+
+        assertWithMessage("Outdated suppressions (can be removed): %s", outdatedSuppressions)
+                .that(outdatedSuppressions)
+                .isEmpty();
     }
 
     /**
