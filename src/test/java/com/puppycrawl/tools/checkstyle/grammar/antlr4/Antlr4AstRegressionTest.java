@@ -86,6 +86,18 @@ public class Antlr4AstRegressionTest extends AbstractTreeTestSupport {
     }
 
     @Test
+    public void testRegressionKeywordsAndOperators2() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionKeywordsAndOperators2.txt"),
+                getPath("InputAntlr4AstRegressionKeywordsAndOperators2.java"));
+    }
+
+    @Test
+    public void testRegressionKeywordsAndOperators3() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionKeywordsAndOperators3.txt"),
+                getPath("InputAntlr4AstRegressionKeywordsAndOperators3.java"));
+    }
+
+    @Test
     public void testRegressionDiamondOperators() throws Exception {
         verifyAst(getPath("ExpectedAntlr4AstRegressionKeywordsAndOperators.txt"),
                 getPath("InputAntlr4AstRegressionKeywordsAndOperators.java"));
@@ -110,9 +122,45 @@ public class Antlr4AstRegressionTest extends AbstractTreeTestSupport {
     }
 
     @Test
+    public void testNewTypeTree2() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionNewTypeTree2.txt"),
+                getPath("InputAntlr4AstRegressionNewTypeTree2.java"));
+    }
+
+    @Test
+    public void testNewTypeTree3() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionNewTypeTree3.txt"),
+                getPath("InputAntlr4AstRegressionNewTypeTree3.java"));
+    }
+
+    @Test
     public void testFallThroughDefault() throws Exception {
         verifyAst(getPath("ExpectedAntlr4AstRegressionFallThroughDefault.txt"),
                 getPath("InputAntlr4AstRegressionFallThroughDefault.java"));
+    }
+
+    @Test
+    public void testFallThroughDefault2() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionFallThroughDefault2.txt"),
+                getPath("InputAntlr4AstRegressionFallThroughDefault2.java"));
+    }
+
+    @Test
+    public void testFallThroughDefault3() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionFallThroughDefault3.txt"),
+                getPath("InputAntlr4AstRegressionFallThroughDefault3.java"));
+    }
+
+    @Test
+    public void testFallThroughDefault4() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionFallThroughDefault4.txt"),
+                getPath("InputAntlr4AstRegressionFallThroughDefault4.java"));
+    }
+
+    @Test
+    public void testFallThroughDefault5() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionFallThroughDefault5.txt"),
+                getPath("InputAntlr4AstRegressionFallThroughDefault5.java"));
     }
 
     @Test
@@ -149,6 +197,18 @@ public class Antlr4AstRegressionTest extends AbstractTreeTestSupport {
     public void testTrickySwitch() throws Exception {
         verifyAst(getPath("ExpectedAntlr4AstRegressionTrickySwitch.txt"),
                 getPath("InputAntlr4AstRegressionTrickySwitch.java"));
+    }
+
+    @Test
+    public void testTrickySwitch2() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionTrickySwitch2.txt"),
+                getPath("InputAntlr4AstRegressionTrickySwitch2.java"));
+    }
+
+    @Test
+    public void testTrickySwitch3() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionTrickySwitch3.txt"),
+                getPath("InputAntlr4AstRegressionTrickySwitch3.java"));
     }
 
     @Test
@@ -231,6 +291,20 @@ public class Antlr4AstRegressionTest extends AbstractTreeTestSupport {
     }
 
     @Test
+    public void testTrickySwitchWithComments2() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionTrickySwitchWithComments2.txt"),
+                getPath("InputAntlr4AstRegressionTrickySwitchWithComments2.java"),
+                JavaParser.Options.WITH_COMMENTS);
+    }
+
+    @Test
+    public void testTrickySwitchWithComments3() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionTrickySwitchWithComments3.txt"),
+                getPath("InputAntlr4AstRegressionTrickySwitchWithComments3.java"),
+                JavaParser.Options.WITH_COMMENTS);
+    }
+
+    @Test
     public void testCassandraInputWithComments() throws Exception {
         verifyAst(getPath("ExpectedAntlr4AstRegressionCassandraInputWithComments.txt"),
                 getPath("InputAntlr4AstRegressionCassandraInputWithComments.java"),
@@ -238,9 +312,51 @@ public class Antlr4AstRegressionTest extends AbstractTreeTestSupport {
     }
 
     @Test
+    public void testCassandraInputWithComments2() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionCassandraInputWithComments2.txt"),
+                getPath("InputAntlr4AstRegressionCassandraInputWithComments2.java"),
+                JavaParser.Options.WITH_COMMENTS);
+    }
+
+    @Test
+    public void testCassandraInputWithComments3() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionCassandraInputWithComments3.txt"),
+                getPath("InputAntlr4AstRegressionCassandraInputWithComments3.java"),
+                JavaParser.Options.WITH_COMMENTS);
+    }
+
+    @Test
+    public void testCassandraInputWithComments4() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionCassandraInputWithComments4.txt"),
+                getPath("InputAntlr4AstRegressionCassandraInputWithComments4.java"),
+                JavaParser.Options.WITH_COMMENTS);
+    }
+
+    @Test
+    public void testCassandraInputWithComments5() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionCassandraInputWithComments5.txt"),
+                getPath("InputAntlr4AstRegressionCassandraInputWithComments5.java"),
+                JavaParser.Options.WITH_COMMENTS);
+    }
+
+    @Test
+    public void testCassandraInputWithComments6() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionCassandraInputWithComments6.txt"),
+                getPath("InputAntlr4AstRegressionCassandraInputWithComments6.java"),
+                JavaParser.Options.WITH_COMMENTS);
+    }
+
+    @Test
     public void testCommentsOnAnnotationsAndEnums() throws Exception {
         verifyAst(getPath("ExpectedAntlr4AstRegressionCommentsOnAnnotationsAndEnums.txt"),
                 getPath("InputAntlr4AstRegressionCommentsOnAnnotationsAndEnums.java"),
+                JavaParser.Options.WITH_COMMENTS);
+    }
+
+    @Test
+    public void testCommentsOnAnnotationsAndEnums2() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionCommentsOnAnnotationsAndEnums2.txt"),
+                getPath("InputAntlr4AstRegressionCommentsOnAnnotationsAndEnums2.java"),
                 JavaParser.Options.WITH_COMMENTS);
     }
 
@@ -283,6 +399,20 @@ public class Antlr4AstRegressionTest extends AbstractTreeTestSupport {
     public void testUncommon4() throws Exception {
         verifyAst(getPath("ExpectedAntlr4AstRegressionUncommon4.txt"),
                 getPath("InputAntlr4AstRegressionUncommon4.java"),
+                JavaParser.Options.WITH_COMMENTS);
+    }
+
+    @Test
+    public void testUncommon5() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionUncommon5.txt"),
+                getPath("InputAntlr4AstRegressionUncommon5.java"),
+                JavaParser.Options.WITH_COMMENTS);
+    }
+
+    @Test
+    public void testUncommon6() throws Exception {
+        verifyAst(getPath("ExpectedAntlr4AstRegressionUncommon6.txt"),
+                getPath("InputAntlr4AstRegressionUncommon6.java"),
                 JavaParser.Options.WITH_COMMENTS);
     }
 
