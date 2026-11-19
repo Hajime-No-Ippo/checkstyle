@@ -97,7 +97,6 @@ awt
 azurewebsites
 Backquote
 backticks
-badpackage
 baeldung
 baratali
 Barowski
@@ -110,7 +109,6 @@ beanutils
 beforeexecutionexclusionfilefilter
 beginningcomments
 bestpractices
-bew
 bitbucket
 bjrke
 blankspaces
@@ -150,10 +148,8 @@ cacio
 caciocavallosilano
 calledmethods
 camelcase
-cas
 casegroup
 catchparametername
-cba
 CComments
 CDATA
 cde
@@ -226,7 +222,6 @@ commonutil
 Compat
 compilermsgs
 compoundstatements
-Comspace
 concat
 config
 configurationloader
@@ -244,7 +239,6 @@ COVEREDRATIO
 cpp
 crlf
 cron
-crossplatform
 csoff
 cson
 css
@@ -602,7 +596,6 @@ iae
 IAOM
 ico
 icu
-Identation
 identifiernames
 Idref
 idx
@@ -748,7 +741,6 @@ jira
 jitpack
 jkl
 JLabel
-Jlo
 jls
 JNDI
 JNullness
@@ -912,7 +904,6 @@ moradan
 mozilla
 MRELEASE
 mstudman
-multicharacter
 multifileregexpheader
 multiline
 multilinecommentleadingasteriskpresence
@@ -1009,7 +1000,6 @@ noscript
 NOSONAR
 nospace
 Nothin
-notjava
 NOTNULL
 nowarn
 nowhitespaceafter
@@ -1138,7 +1128,6 @@ Plychee
 PMB
 pmd
 pmdruleset
-PModel
 png
 Pno
 poetix
@@ -1329,7 +1318,6 @@ simplifybooleanexpression
 simplifybooleanreturn
 sincetag
 singleline
-singlelined
 singlelinejavadoc
 singlespaceseparator
 sitetoc
@@ -1441,7 +1429,6 @@ td
 teamcity
 technotes
 temurin
-Testik
 testmodules
 testname
 textblock
@@ -1538,7 +1525,6 @@ unusedcatchparametershouldbeunnamed
 unusedimports
 unusedlambdaparametershouldbeunnamed
 unusedlocalvariable
-Unusedprivate
 unusedprivatefield
 unusedtryresourceshouldbeunnamed
 uppercased
