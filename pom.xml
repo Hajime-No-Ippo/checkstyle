@@ -217,7 +217,7 @@
     <sevntu-checkstyle-check.checkstyle.version>
       14.0.0
     </sevntu-checkstyle-check.checkstyle.version>
-    <versions.plugin.version>2.25.1</versions.plugin.version>
+    <versions.plugin.version>2.25.2</versions.plugin.version>
     <compiler.plugin.version>3.16.0</compiler.plugin.version>
     <checkstyle.skipCompileInputResources>false</checkstyle.skipCompileInputResources>
     <checkstyle.openrewrite.version>1.0.0</checkstyle.openrewrite.version>
@@ -581,7 +581,7 @@
             <!-- javadoc switches to module mode (all output nested under a
                  "com.puppycrawl.tools.checkstyle/" directory) whenever module-info.java exists
                  under -sourcepath, which would break all existing apidocs links on the site and
-                 in the linkcheck config. Document a copy of the sources without the descriptor
+                 in the link check config. Document a copy of the sources without the descriptor
                  instead (see the copy-javadoc-sources execution of maven-resources-plugin) so
                  the published layout and URLs stay unchanged. -->
             <sourcepath>${project.build.directory}/javadoc-sources:${project.build.directory}/generated-sources/antlr</sourcepath>
@@ -2043,7 +2043,7 @@
               <excludes>
                 <!-- git -->
                 <exclude>.git/**</exclude>
-                <!-- hand crafted indentation  -->
+                <!-- handcrafted indentation  -->
                 <exclude>src/site/xdoc/**</exclude>
                 <!-- Temporary files -->
                 <exclude>target/**</exclude>
