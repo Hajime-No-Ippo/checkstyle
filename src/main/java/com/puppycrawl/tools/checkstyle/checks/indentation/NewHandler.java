@@ -57,7 +57,7 @@ public class NewHandler extends AbstractExpressionHandler {
 
     @Override
     public void checkIndentation() {
-        // if new is on the line start and it is not the part of assignment.
+        // if new is on the line start, and it is not the part of assignment.
         if (isOnStartOfLine(mainAst)) {
             final int columnNo = expandedTabsColumnNo(mainAst);
             final IndentLevel level = getIndentImpl();
@@ -92,7 +92,7 @@ public class NewHandler extends AbstractExpressionHandler {
      *
      * @return true if nested new is present.
      */
-    public boolean checkNestedNew(DetailAST expression) {
+    private static boolean checkNestedNew(DetailAST expression) {
         boolean result = false;
         if (expression != null && expression.getFirstChild() != null) {
             final boolean isNestedNewPresent = expression.getFirstChild()
