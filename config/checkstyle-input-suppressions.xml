@@ -89,15 +89,7 @@
 
   <!-- until https://github.com/checkstyle/checkstyle/issues/22775 -->
   <suppress id="violationBetweenAnnotationAndMethod"
-            files="[\\/]checks[\\/]annotation[\\/]suppresswarnings[\\/]compact[\\/]InputSuppressWarningsCompactSourceFileDefault\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="[\\/]checks[\\/]annotation[\\/]suppresswarnings[\\/]compact[\\/]InputSuppressWarningsCompactSourceFileFormat\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
             files="[\\/]checks[\\/]coding[\\/]textblockgooglestyleformatting[\\/]InputTextBlockGoogleStyleFormattingAnnotations\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="[\\/]checks[\\/]javadoc[\\/]invalidjavadocposition[\\/]InputInvalidJavadocPosition\.java"/>
-  <suppress id="violationBetweenJavadocAndMethod"
-            files="[\\/]checks[\\/]javadoc[\\/]invalidjavadocposition[\\/]InputInvalidJavadocPosition\.java"/>
   <suppress id="violationBetweenAnnotationAndMethod"
             files="[\\/]checks[\\/]suppresswarningsholder[\\/]InputSuppressWarningsHolderAlias6\.java"/>
   <suppress id="violationBetweenJavadocAndMethod"
@@ -105,15 +97,11 @@
   <suppress id="violationBetweenAnnotationAndMethod"
             files="[\\/]checks[\\/]whitespace[\\/]emptylinewrappinginblock[\\/]InputEmptyLineWrappingInBlockArrayInit\.java"/>
   <suppress id="violationBetweenAnnotationAndMethod"
-            files="[\\/]checks[\\/]whitespace[\\/]nolinewrap[\\/]compact[\\/]InputNoLineWrapCompactSourceFileProperties\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
             files="[\\/]com[\\/]google[\\/]checkstyle[\\/]test[\\/]chapter4formatting[\\/]rule462horizontalwhitespace[\\/]InputParenPad\.java"/>
   <suppress id="violationBetweenAnnotationAndMethod"
             files="[\\/]com[\\/]google[\\/]checkstyle[\\/]test[\\/]chapter4formatting[\\/]rule4853methodsandconstructorsannotations[\\/]InputMethodsAndConstructorsAnnotations\.java"/>
   <suppress id="violationBetweenJavadocAndMethod"
             files="[\\/]com[\\/]google[\\/]checkstyle[\\/]test[\\/]chapter4formatting[\\/]rule4853methodsandconstructorsannotations[\\/]InputMethodsAndConstructorsAnnotations\.java"/>
-  <suppress id="violationBetweenAnnotationAndMethod"
-            files="[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]annotation[\\/]suppresswarnings[\\/]InputXpathSuppressWarningsAnnotationFieldDefinition\.java"/>
   <suppress id="violationBetweenJavadocAndMethod"
             files="[\\/]org[\\/]checkstyle[\\/]suppressionxpathfilter[\\/]javadoc[\\/]blockcommentendposition[\\/]InputXpathBlockCommentEndPositionOne\.java"/>
 
