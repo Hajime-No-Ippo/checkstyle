@@ -109,7 +109,6 @@ bestpractices
 bitbucket
 bjrke
 blankspaces
-Blic
 blockandinlinetags
 blockcomment
 blockcommentendposition
@@ -147,7 +146,6 @@ casegroup
 catchparametername
 CComments
 CDATA
-cde
 Cdi
 Cfg
 Cfml
@@ -402,7 +400,6 @@ esslingen
 etsy
 euo
 ev
-Evt
 exceptionoverrides
 exceptionstodocument
 exceptionthrowshouldusecontext
@@ -498,7 +495,6 @@ Fsun
 Ftl
 Ftools
 ftp
-ftpclient
 fullident
 fullname
 func
@@ -551,7 +547,6 @@ Gtk
 gui
 guieffect
 gwt
-gx
 gz
 hadoop
 hamcrest
@@ -594,7 +589,6 @@ Idref
 idx
 ietf
 ifstatements
-Igno
 IGNORETHIS
 igorminar
 Ilja
@@ -913,11 +907,9 @@ mvnrepository
 mvnw
 Mycheckstyle
 mycompany
-mycompanychecks
 mycustom
 mycustomtag
 myname
-myproject
 Mysql
 mytag
 NAMEFILE
@@ -939,10 +931,8 @@ nestedtrydepth
 netbeans
 newdomain
 newlineatendoffile
-NEX
 Nfc
 NFF
-Nfo
 nformatter
 Niederhauser
 nikitasavinov
@@ -986,7 +976,6 @@ noreply
 noscript
 NOSONAR
 nospace
-Nothin
 NOTNULL
 nowarn
 nowhitespaceafter
@@ -998,7 +987,6 @@ npathcomplexity
 npe
 npm
 nrmancuso
-ntokens
 NTU
 nullcase
 nullcheck
@@ -1106,7 +1094,6 @@ pinentry
 pipefail
 PIPESTATUS
 pitest
-pkx
 PLHM
 plugin
 Plychee
@@ -1129,7 +1116,6 @@ prettyprint
 printf
 println
 PRINTSTACKTRACE
-priva
 PRMC
 programpractice
 Proguard
@@ -1215,7 +1201,6 @@ romani
 romanivanovjr
 rparen
 rpmfind
-rq
 Rr
 Rsa
 rsh
@@ -1317,7 +1302,6 @@ snyk
 socio
 Sohjiro
 solr
-someoneelse
 sonarcloud
 sonarqube
 sonarsource
@@ -1410,7 +1394,6 @@ testname
 textblock
 textblockgooglestyleformatting
 tfij
-Tfo
 TFOOT
 Thauvin
 thead
@@ -1454,7 +1437,6 @@ tstamp
 tt
 tta
 ttf
-Tvar
 tvf
 tw
 typebodypadding
@@ -1519,7 +1501,6 @@ UUID
 UWF
 uxxxx
 validator
-VALUELONG
 vararg
 variabledeclarationusagedistance
 Veach
@@ -1649,6 +1630,5 @@ yq
 yyyy
 Zbbh
 Zeilenumbruch
-zf
 zh
 ZSH
